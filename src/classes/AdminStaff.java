@@ -3,7 +3,7 @@ package classes;
 public class AdminStaff extends Employee {
 
 	
-	//Bonus applied for admin staff will be an amount of 12% per year over the current wages (currentSalaray)
+	//Bonus applied for adminstaff will be an amount of 12% per year over the current wages (currentSalaray)
 	@Override
 	public double anualBonus() {
 		
