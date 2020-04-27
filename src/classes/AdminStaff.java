@@ -1,15 +1,19 @@
 package classes;
 
 public class AdminStaff extends Employee {
+
 	
-	  public double anualBonus() {
+	//Bonus applied for admin staff will be an amount of 12% per year over the current wages (currentSalaray)
+	@Override
+	public double anualBonus() {
+		
+		if (this.getYearsWorking() >= 1)
+			return this.currentSalary + this.currentSalary * 0.12;
+		
+		else
 
-	        double bonusPercentTotal;
-
-	        bonusPercentTotal = this.getYearsWorking() >= 10 ? 1 : this.getYearsWorking() * 0.10; // bonus of 100% or 15% depending on how many years working for the company
-
-	        return (this.currentSalary * bonusPercentTotal) + this.currentSalary;
-	    }
-	
+			return 0.00;															
+												
+	}
 
 }
