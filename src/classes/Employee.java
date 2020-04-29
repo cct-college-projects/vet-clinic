@@ -6,6 +6,7 @@ import java.util.GregorianCalendar;
 abstract public class Employee {
     protected int emp_id;
     protected String name;
+    protected String surname;
     protected String dob;
     protected String gender;
     protected String email;
@@ -16,8 +17,10 @@ abstract public class Employee {
     protected String title;
     protected String dateOfHire;
 
-    public Employee(){
-
+    public Employee(int id, String name, String surname){
+    	this.setEmp_id(id);
+        this.setName(name);
+        this.setSurname(surname);
     }
 
     public abstract double anualBonus();
@@ -36,6 +39,14 @@ abstract public class Employee {
 
     public void setName(String name) {
         this.name = name;
+    }
+    
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
     public String getDob() {
