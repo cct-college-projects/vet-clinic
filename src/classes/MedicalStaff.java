@@ -1,22 +1,15 @@
 package classes;
 
 public class MedicalStaff extends Employee {
-<<<<<<< HEAD
-	
-=======
 
->>>>>>> branch 'master' of https://github.com/cct-college-projects/vet-clinic.git
+
     private String medicRegister;
     
     public MedicalStaff(int id, String name, String surname) {
     	super(id, name, surname);
     }
 
-    public MedicalStaff(int id, String name, String surname) {
-        super(id, name, surname);
-    }
-
-
+   
     @Override
     public double anualBonus() {
 

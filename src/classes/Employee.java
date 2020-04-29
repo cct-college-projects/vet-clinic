@@ -18,11 +18,8 @@ abstract public class Employee {
     protected String dateOfHire;
 
     public Employee(int id, String name, String surname){
-<<<<<<< HEAD
+
     	this.setEmp_id(id);
-=======
-        this.setEmp_id(id);
->>>>>>> branch 'master' of https://github.com/cct-college-projects/vet-clinic.git
         this.setName(name);
         this.setSurname(surname);
     }
@@ -45,14 +42,6 @@ abstract public class Employee {
         this.name = name;
     }
     
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
     public String getDob() {
         return dob;
     }
