@@ -18,7 +18,11 @@ abstract public class Employee {
     protected String dateOfHire;
 
     public Employee(int id, String name, String surname){
+<<<<<<< HEAD
     	this.setEmp_id(id);
+=======
+        this.setEmp_id(id);
+>>>>>>> branch 'master' of https://github.com/cct-college-projects/vet-clinic.git
         this.setName(name);
         this.setSurname(surname);
     }
@@ -119,6 +123,28 @@ abstract public class Employee {
 
     public void setDateOfHire(String dateOfHire) {
         this.dateOfHire = dateOfHire;
+    }
+
+
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getFullName(){
+        if(this.name != null && this.surname != null){
+            return this.name+' '+surname;
+        } else if(this.name != null){
+            return this.name;
+        } else if(this.surname != null){
+            return this.surname;
+        } else {
+            return "This employee doesn't have a name.";
+        }
     }
 
     public int getYearsWorking() {
