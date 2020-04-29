@@ -1,7 +1,13 @@
 package classes;
 
 public class MedicalStaff extends Employee {
+
     private String medicRegister;
+
+    public MedicalStaff(int id, String name, String surname) {
+        super(id, name, surname);
+    }
+
 
     @Override
     public double anualBonus() {

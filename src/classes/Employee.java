@@ -6,6 +6,7 @@ import java.util.GregorianCalendar;
 abstract public class Employee {
     protected int emp_id;
     protected String name;
+    protected String surname;
     protected String dob;
     protected String gender;
     protected String email;
@@ -16,8 +17,10 @@ abstract public class Employee {
     protected String title;
     protected String dateOfHire;
 
-    public Employee(){
-
+    public Employee(int id, String name, String surname){
+        this.setEmp_id(id);
+        this.setName(name);
+        this.setSurname(surname);
     }
 
     public abstract double anualBonus();
@@ -108,6 +111,28 @@ abstract public class Employee {
 
     public void setDateOfHire(String dateOfHire) {
         this.dateOfHire = dateOfHire;
+    }
+
+
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getFullName(){
+        if(this.name != null && this.surname != null){
+            return this.name+' '+surname;
+        } else if(this.name != null){
+            return this.name;
+        } else if(this.surname != null){
+            return this.surname;
+        } else {
+            return "This employee doesn't have a name.";
+        }
     }
 
     public int getYearsWorking() {
