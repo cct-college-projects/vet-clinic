@@ -1,7 +1,8 @@
 package classes;
 
 final public class Bird extends Animals {
-	public Bird (String name, int age, String medicalCondition) {
-		super (name, age, medicalCondition);
+	public Bird (int animal_id, String name, String medicalCondition) {
+		super(animal_id, name, medicalCondition);
 	}
+
 }

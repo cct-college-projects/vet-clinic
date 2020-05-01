@@ -1,7 +1,7 @@
 package utils;
 
 import conf.SingletonLoadStaff;
-
+import conf.SingletonLoadAnimals;
 public class ToScreen {
 
     public static void showMessage(String msg){
@@ -35,6 +35,25 @@ public class ToScreen {
             showMessage(staffs.getAccountantList().get(i).getEmp_id()+" - "+staffs.getAccountantList().get(i).getFullName());
         }
 
+    }
+    
+    public static void showAnimalAll(){
+        SingletonLoadAnimals animals = SingletonLoadAnimals.getInstance();
+        
+        showMessage("### DOG ###");
+        for (int i = 0; i < animals.getDogList().size(); i++) {
+            showMessage(animals.getDogList().get(i).getAnimal_id()+" - "+animals.getDogList().get(i).getFullInformation());
+        }
+        
+        showMessage("### CAT ###");
+        for (int i = 0; i < animals.getCatList().size(); i++) {
+            showMessage(animals.getCatList().get(i).getAnimal_id()+" - "+animals.getCatList().get(i).getFullInformation());
+        }
+        
+        showMessage("### BIRD ###");
+        for (int i = 0; i < animals.getBirdList().size(); i++) {
+            showMessage(animals.getBirdList().get(i).getAnimal_id()+" - "+animals.getBirdList().get(i).getFullInformation());
+        }
     }
 
 }

@@ -7,6 +7,7 @@ public enum FilesImport {
     * */
     GIVENNAME("./src/names/givenname.txt"),
     SURNAME("./src/names/surname.txt"),
+    ANIMALILLNESS("./src/names/animalillness.txt"),
     ANIMALNAME("./src/names/animalname.txt"),
     NAMESMEN("./src/names/namesmen.txt"),
     NAMESWOMEN("./src/names/nameswomen.txt");

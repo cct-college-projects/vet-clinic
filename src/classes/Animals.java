@@ -1,6 +1,7 @@
 package classes;
 
 abstract public class Animals {
+	protected int animal_id;
 	protected String name;
 	protected int age;
 	protected String medicalCondition;
@@ -8,11 +9,21 @@ abstract public class Animals {
 	
 	
 	
-	public Animals(String name, int age, String medicalCondition) {
+	public Animals(int animal_id, String name, String medicalCondition) {
+		this.setAnimal_id(animal_id);
 		this.setName (name);
-		this.setAge (age);
+		
 		this.setMedicalCondition (medicalCondition);
 	}
+	
+	public int getAnimal_id() {
+		return animal_id;
+	}
+
+	public void setAnimal_id(int animal_id) {
+		this.animal_id = animal_id;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -32,6 +43,17 @@ abstract public class Animals {
 		this.medicalCondition = medicalCondition;
 	}
 	
+	public String getFullInformation(){
+        if(this.name != null && this.medicalCondition != null){
+            return this.name + "- age: " + " - Illness: " + medicalCondition;
+        } else if(this.name != null){
+            return this.name;
+        } else if(this.medicalCondition != null){
+            return this.medicalCondition;
+        } else {
+            return "This animal doesn't have a name.";
+        }
+    }
 	
 
 }
