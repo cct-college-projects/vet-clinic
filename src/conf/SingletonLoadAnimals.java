@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class SingletonLoadAnimals {
 
-	private int maxAnimal = 10;
+	private int maxAnimal = 1000;
 	private int animal_id = 0;
 	private String nameRandom, illnessRandom;
 	private ArrayList<Dog> dogList = new ArrayList<Dog>();

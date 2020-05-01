@@ -1,5 +1,6 @@
 import classes.*;
 import conf.SingletonLoadStaff;
+import conf.SingletonLoadAnimals;
 import utils.ToScreen;
 
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ public class VetClinic {
     private ArrayList<Surgeon> surgeonList;
     private ArrayList<Nurse> nurseList;
     private SingletonLoadStaff staffs;
+    private SingletonLoadAnimals animals;
 
     public static void main(String[] args) {
         new VetClinic();
@@ -22,6 +24,10 @@ public class VetClinic {
         this.nurseList   = this.staffs.getNurseList();
 
         ToScreen.showStaffAll();
+        
+        this.animals = SingletonLoadAnimals.getInstance();
+        
+        ToScreen.showAnimalAll();
     }
 
 }
