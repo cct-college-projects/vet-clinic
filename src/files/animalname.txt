@@ -90,7 +90,7 @@ Jackson
 Lulu
 Riley
 Thor
-Zoe / Zoey
+Zoey
 Barney
 Bentley
 Bruno
@@ -98,3 +98,7 @@ Dixie
 Hank
 Hazel
 Jade
+juju
+Mel
+Skiper
+Sushi

@@ -45,8 +45,8 @@ abstract public class Animals {
 	}
 	
 	public String getFullInformation(){
-        if(this.name != null && this.medicalCondition != null){
-            return this.name + " - age: " + age +  " - Illness: " + medicalCondition;
+        if(this.name != null && this.age != 0 && this.medicalCondition != null){
+            return this.name + " - age: " + age + " - Illness: " + medicalCondition;
         } else if(this.name != null){
             return this.name;
         } else if(this.medicalCondition != null){
@@ -54,9 +54,11 @@ abstract public class Animals {
         } else {
             return "This animal doesn't have a name.";
         }
+        
     }
-	// It child class will have its own code
-	public abstract void animalAge();
+	// Each child class will have its own code
+	// Method to generate randomly the animals age according to its type
+	public abstract void setAge();
 	
 
 }

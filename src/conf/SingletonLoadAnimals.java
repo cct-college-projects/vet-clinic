@@ -50,13 +50,14 @@ import java.util.Random;
 	
 	private void createAnimalList(){
 		int randomAnimalType;
-		System.out.println("Creating Animal list.");
+			System.out.println("Creating Animal list.");
 		for (int i = 0; i < this.maxAnimal; i++) {
 			randomAnimalType = rd.nextInt(3);
 			idnameRandom = rd.nextInt(this.animalnameListSize);
 			idillnessRandom = rd.nextInt(this.animalillnessListSize);
 			nameRandom = animalnameList.get(idnameRandom);
 			illnessRandom = animalillnessList.get(idillnessRandom);
+			age = rd.nextInt(80);
 			switch (randomAnimalType){
 				case 0 : dogList.add(new Dog (this.incrementAnimal_id(), nameRandom, age,  illnessRandom));
 					break;
