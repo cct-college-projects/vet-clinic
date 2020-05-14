@@ -2,23 +2,23 @@ package enums;
 
 public enum FilesImport {
     /*
-        GIVENNAME is a mix of names for women and men but just in case some day needs a name by gener, there are two
+        GIVENNAME is a mix of names for women and men but just in case some day needs a name by gender, there are two
         more files for that
     * */
-    GIVENNAME("./src/names/givenname.txt"),
-    SURNAME("./src/names/surname.txt"),
-    ANIMALILLNESS("./src/names/animalillness.txt"),
-    ANIMALNAME("./src/names/animalname.txt"),
-    NAMESMEN("./src/names/namesmen.txt"),
-    NAMESWOMEN("./src/names/nameswomen.txt");
+    GIVENNAME("./src/files/givenname.txt"),
+    SURNAME("./src/files/surname.txt"),
+    ANIMALILLNESS("./src/files/animalillness.txt"),
+    ANIMALNAME("./src/files/animalname.txt"),
+    NAMESMEN("./src/files/namesmen.txt"),
+    NAMESWOMEN("./src/files/nameswomen.txt");
 
-    private final String direcotry;
+    private final String directory;
 
     FilesImport(String directory) {
-        this.direcotry = directory;
+        this.directory = directory;
     }
 
-    public String getDirecotry() {
-        return this.direcotry;
+    public String getDirectory() {
+        return this.directory;
     }
 }

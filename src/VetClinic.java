@@ -1,5 +1,8 @@
 import classes.*;
 import conf.SingletonLoadStaff;
+import models.Nurse;
+import models.Surgeon;
+import models.Veterinary;
 import conf.SingletonLoadAnimals;
 import utils.ToScreen;
 

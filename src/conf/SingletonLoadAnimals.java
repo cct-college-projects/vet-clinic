@@ -1,14 +1,19 @@
 package conf;
 
-import classes.*;
+import classes.Animals;
 import helpers.HelperAnimals;
+import models.Bird;
+import models.Cat;
+import models.Dog;
+
 import java.util.ArrayList;
 import java.util.Random;
 
-public class SingletonLoadAnimals {
+ public class SingletonLoadAnimals {
 
 	private int maxAnimal = 1000;
 	private int animal_id = 0;
+	private int age = 0;
 	private String nameRandom, illnessRandom;
 	private ArrayList<Dog> dogList = new ArrayList<Dog>();
 	private ArrayList<Cat> catList = new ArrayList<Cat>();
@@ -39,7 +44,7 @@ public class SingletonLoadAnimals {
 			
 			instance = new SingletonLoadAnimals();
 		}
-		return (instance);
+		return instance;
 	}
 	
 	
@@ -53,18 +58,17 @@ public class SingletonLoadAnimals {
 			nameRandom = animalnameList.get(idnameRandom);
 			illnessRandom = animalillnessList.get(idillnessRandom);
 			switch (randomAnimalType){
-				case 0 : dogList.add(new Dog (this.incrementAnimal_id(), nameRandom, illnessRandom));
+				case 0 : dogList.add(new Dog (this.incrementAnimal_id(), nameRandom, age,  illnessRandom));
 					break;
-				case 1 : catList.add(new Cat(this.incrementAnimal_id(), nameRandom, illnessRandom));
+				case 1 : catList.add(new Cat(this.incrementAnimal_id(), nameRandom, age,  illnessRandom));
 					break;
 
-				default : birdList.add(new Bird(this.incrementAnimal_id(), nameRandom, illnessRandom));
+				default : birdList.add(new Bird(this.incrementAnimal_id(), nameRandom, age,  illnessRandom));
 			}
 		}
-		
-		
+			
 	}
-	
+			
 	private int incrementAnimal_id() {
 		
 		this.animal_id++;

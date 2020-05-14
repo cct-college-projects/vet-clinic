@@ -2,6 +2,12 @@ package conf;
 
 import classes.*;
 import helpers.HelperMedStaff;
+import models.Accountant;
+import models.Itsupport;
+import models.Nurse;
+import models.Secretary;
+import models.Surgeon;
+import models.Veterinary;
 
 import java.util.ArrayList;
 import java.util.Random;

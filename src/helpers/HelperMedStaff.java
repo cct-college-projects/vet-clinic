@@ -18,7 +18,7 @@ public class HelperMedStaff {
 
         System.out.println("Readin file given names...");
         try {
-            reader = new BufferedReader( new FileReader(FilesImport.GIVENNAME.getDirecotry()));
+            reader = new BufferedReader( new FileReader(FilesImport.GIVENNAME.getDirectory()));
             while ((line = reader.readLine()) != null) {
                 givenname.add(line);
             }
@@ -38,7 +38,7 @@ public class HelperMedStaff {
         String line;
         System.out.println("Readin file surnames...");
         try {
-            reader = new BufferedReader( new FileReader(FilesImport.SURNAME.getDirecotry()));
+            reader = new BufferedReader( new FileReader(FilesImport.SURNAME.getDirectory()));
             while ((line = reader.readLine()) != null) {
                 surname.add(line);
             }

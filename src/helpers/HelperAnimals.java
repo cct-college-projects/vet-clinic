@@ -18,7 +18,7 @@ public class HelperAnimals {
 		
 		System.out.println("Reading animal name file");
 		try {
-			br = new BufferedReader(new FileReader (FilesImport.ANIMALNAME.getDirecotry()));
+			br = new BufferedReader(new FileReader (FilesImport.ANIMALNAME.getDirectory()));
 			while ((line = br.readLine()) !=null) {
 				animalName.add(line);
 			}
@@ -40,7 +40,7 @@ public class HelperAnimals {
 		
 		System.out.println("Reading animal illness file");
 		try {
-			br = new BufferedReader(new FileReader (FilesImport.ANIMALILLNESS.getDirecotry()));
+			br = new BufferedReader(new FileReader (FilesImport.ANIMALILLNESS.getDirectory()));
 			while ((line = br.readLine()) !=null) {
 				animalIllness.add(line);
 			}
@@ -55,6 +55,9 @@ public class HelperAnimals {
 		return animalIllness;
 	}
 	
+		
+		
+		
 }
 
 

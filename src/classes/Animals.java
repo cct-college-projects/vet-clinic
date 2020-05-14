@@ -9,10 +9,11 @@ abstract public class Animals {
 	
 	
 	
-	public Animals(int animal_id, String name, String medicalCondition) {
+	//Constructor
+	public Animals(int animal_id, String name, int age, String medicalCondition) {
 		this.setAnimal_id(animal_id);
 		this.setName (name);
-		
+		this.setAge (age);
 		this.setMedicalCondition (medicalCondition);
 	}
 	
@@ -45,7 +46,7 @@ abstract public class Animals {
 	
 	public String getFullInformation(){
         if(this.name != null && this.medicalCondition != null){
-            return this.name + "- age: " + " - Illness: " + medicalCondition;
+            return this.name + " - age: " + age +  " - Illness: " + medicalCondition;
         } else if(this.name != null){
             return this.name;
         } else if(this.medicalCondition != null){
@@ -54,6 +55,8 @@ abstract public class Animals {
             return "This animal doesn't have a name.";
         }
     }
+	// It child class will have its own code
+	public abstract void animalAge();
 	
 
 }

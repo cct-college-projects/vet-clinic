@@ -1,4 +1,6 @@
-package classes;
+package models;
+
+import classes.MedicalStaff;
 
 final public class Veterinary extends MedicalStaff {
 
