@@ -30,7 +30,7 @@ public class ToScreen {
         for (int i = 0; i < staffs.getItSupportList().size(); i++) {
             showMessage(staffs.getItSupportList().get(i).getEmp_id()+" - "+staffs.getItSupportList().get(i).getFullName());
         }
-        showMessage("### ACCOUTANT ###");
+        showMessage("### ACCOUNTANT ###");
         for (int i = 0; i < staffs.getAccountantList().size(); i++) {
             showMessage(staffs.getAccountantList().get(i).getEmp_id()+" - "+staffs.getAccountantList().get(i).getFullName());
         }

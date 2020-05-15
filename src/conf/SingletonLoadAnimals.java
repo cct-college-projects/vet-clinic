@@ -57,7 +57,7 @@ import java.util.Random;
 			idillnessRandom = rd.nextInt(this.animalillnessListSize);
 			nameRandom = animalnameList.get(idnameRandom);
 			illnessRandom = animalillnessList.get(idillnessRandom);
-			age = rd.nextInt(80);
+			
 			switch (randomAnimalType){
 				case 0 : dogList.add(new Dog (this.incrementAnimal_id(), nameRandom, age,  illnessRandom));
 					break;

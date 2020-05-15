@@ -1,3 +1,12 @@
+External parasites (ticks)
+External parasites (fleas)
+External parasites (mange)
+Leptospirosis
+Heatstroke
+Intestinal parasites
+Canine parvovirus
+Canine influenza
+Canine distemper
 Candida
 Polyomavirus
 Psittacosis
@@ -39,3 +48,13 @@ Glaucoma
 Incontinence (Urinary)
 Obesity
 Osteoarthritis
+Salmonella
+Trichomoniasis
+Trichomoniasis
+Lyme Disease
+Snuffles
+Hairballs
+Uterine tumours
+Myxomatosis
+Calicivirus
+Overgrown teeth
