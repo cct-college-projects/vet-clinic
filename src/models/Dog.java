@@ -15,7 +15,8 @@ public Random rd = new Random();
 	@Override
 	//Method to set age for dog randomly
 	public void setAge () {
-	int age = rd.nextInt(17);
+		// defining the random range for age between 1 up to 17
+		int age = 1 + (int)(Math.random()*(17));
 	this.age = age;
 	}
 	

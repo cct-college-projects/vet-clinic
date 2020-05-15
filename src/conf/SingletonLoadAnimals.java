@@ -5,6 +5,8 @@ import helpers.HelperAnimals;
 import models.Bird;
 import models.Cat;
 import models.Dog;
+import models.Rabbit;
+import models.Hamster;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -18,6 +20,8 @@ import java.util.Random;
 	private ArrayList<Dog> dogList = new ArrayList<Dog>();
 	private ArrayList<Cat> catList = new ArrayList<Cat>();
 	private ArrayList<Bird> birdList = new ArrayList<Bird>();
+	private ArrayList<Rabbit> rabbitList = new ArrayList<Rabbit>();
+	private ArrayList<Hamster> hamsterList = new ArrayList<Hamster>();
 	private ArrayList<String> animalnameList;
 	private ArrayList<String> animalillnessList;
 	private Random rd = new Random();
@@ -52,7 +56,7 @@ import java.util.Random;
 		int randomAnimalType;
 			System.out.println("Creating Animal list.");
 		for (int i = 0; i < this.maxAnimal; i++) {
-			randomAnimalType = rd.nextInt(3);
+			randomAnimalType = rd.nextInt(5);
 			idnameRandom = rd.nextInt(this.animalnameListSize);
 			idillnessRandom = rd.nextInt(this.animalillnessListSize);
 			nameRandom = animalnameList.get(idnameRandom);
@@ -63,8 +67,11 @@ import java.util.Random;
 					break;
 				case 1 : catList.add(new Cat(this.incrementAnimal_id(), nameRandom, age,  illnessRandom));
 					break;
-
-				default : birdList.add(new Bird(this.incrementAnimal_id(), nameRandom, age,  illnessRandom));
+				case 2 : birdList.add(new Bird(this.incrementAnimal_id(), nameRandom, age,  illnessRandom));
+					break;
+				case 3 : hamsterList.add(new Hamster(this.incrementAnimal_id(), nameRandom, age, illnessRandom));
+					break;
+				default : rabbitList.add(new Rabbit(this.incrementAnimal_id(), nameRandom, age, illnessRandom));	
 			}
 		}
 			
@@ -88,6 +95,15 @@ import java.util.Random;
 	public ArrayList<Bird> getBirdList() {
 		return birdList;
 	}
+	
+	public ArrayList<Hamster> getHamsterList() {
+		return hamsterList;
+	}
+	
+	public ArrayList<Rabbit> getRabbitList() {
+		return rabbitList;
+	}
+	
 	
 	public void close() {
 		

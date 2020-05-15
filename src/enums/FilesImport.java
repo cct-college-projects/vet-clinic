@@ -10,7 +10,10 @@ public enum FilesImport {
     ANIMALILLNESS("./src/files/animalillness.txt"),
     ANIMALNAME("./src/files/animalname.txt"),
     NAMESMEN("./src/files/namesmen.txt"),
-    NAMESWOMEN("./src/files/nameswomen.txt");
+    NAMESWOMEN("./src/files/nameswomen.txt"),
+	TASKACCOUNTANT("./src/files/task_accountant.txt"),
+	TASKITSUPPORT("./src/files/task_Itsupport.txt"),
+	TASKSECRETARY("./src/files/task_secretary.txt");
 
     private final String directory;
 

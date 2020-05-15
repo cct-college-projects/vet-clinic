@@ -49,7 +49,7 @@ abstract public class Animals {
             return this.name + " - age: " + age + " - Illness: " + medicalCondition;
         } else if(this.name != null){
             return this.name;
-        } else if(this.medicalCondition != null){
+        }   else if(this.medicalCondition != null){
             return this.medicalCondition;
         } else {
             return "This animal doesn't have a name.";

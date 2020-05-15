@@ -42,18 +42,28 @@ public class ToScreen {
         
         showMessage("### DOG ###");
         for (int i = 0; i < animals.getDogList().size(); i++) {
-            showMessage(animals.getDogList().get(i).getAnimal_id()+" - "+animals.getDogList().get(i).getFullInformation());
+            showMessage(animals.getDogList().get(i).getAnimal_id()+" - "+ animals.getDogList().get(i).getFullInformation());
         }
         
         showMessage("### CAT ###");
         for (int i = 0; i < animals.getCatList().size(); i++) {
-            showMessage(animals.getCatList().get(i).getAnimal_id()+" - "+animals.getCatList().get(i).getFullInformation());
+            showMessage(animals.getCatList().get(i).getAnimal_id()+" - "+ animals.getCatList().get(i).getFullInformation());
         }
         
         showMessage("### BIRD ###");
         for (int i = 0; i < animals.getBirdList().size(); i++) {
-            showMessage(animals.getBirdList().get(i).getAnimal_id()+" - "+animals.getBirdList().get(i).getFullInformation());
+            showMessage(animals.getBirdList().get(i).getAnimal_id()+" - "+ animals.getBirdList().get(i).getFullInformation());
+        }
+        
+        showMessage("### RABBIT ###");
+        for (int i = 0; i < animals.getRabbitList().size(); i++) {
+            showMessage(animals.getRabbitList().get(i).getAnimal_id()+" - "+ animals.getRabbitList().get(i).getFullInformation());
+        }
+        showMessage("### HAMSTER ###");
+        for (int i = 0; i < animals.getHamsterList().size(); i++) {
+            showMessage(animals.getHamsterList().get(i).getAnimal_id()+" - "+ animals.getHamsterList().get(i).getFullInformation());
         }
     }
+    
 
 }
