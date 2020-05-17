@@ -434,7 +434,6 @@ Keegan
 Taylor
 Matteo
 Alisha
-Aodhán
 Catherine
 Casey
 Reece
@@ -565,7 +564,6 @@ Lucie
 Ibrahim
 Piper
 Tobias
-Bláthnaid
 Brandon
 Darren
 Eabha
@@ -691,7 +689,6 @@ Maisy
 Malachy
 Maci
 Caden
-Croíadh
 Rafael
 Heather
 Ellis
@@ -706,7 +703,6 @@ Lenny
 Bethany
 Reggie
 Joy
-Shéa
 Sadbh
 Tomas
 Meghan
@@ -757,20 +753,14 @@ Haniya
 Nico
 Stevie
 Zion
-Seoidín
 Ignacy
 Shannon
 Ruadh
 Jodie
 Gael
 Kelly
-Cúan
-Wiktoria
-Dónal
 Jenna
-Seán Óg
 Ashley
-imí
 Karolina
 Padraig
 Sasha
@@ -836,14 +826,6 @@ River
 Sandra
 Albie
 Serena
-Caoimhín
-Veronica
-Kyren
-Eileen
-Lorcán
-Johanna
-Ódhran
-Lauryn
 Micheal
 Madeleine
 Tiarnan
@@ -879,9 +861,7 @@ Bowie
 Milan
 Vada
 Rio
-Eibhlín
 Wyatt
-Esmée
 Emmett
 Tori
 Freddy
@@ -896,9 +876,7 @@ Kody
 Lea
 Teodor
 Una
-Óisín
 Neasa
-Senán
 Demi
 Steven
 Karina
@@ -963,23 +941,16 @@ Arijus
 Karson
 Rayyan
 Avery
-Zoë
 Kayson
-Síne
-Croí
 Alaia
-Fionán
 Abbey
-Pádraic
 Emer
 adna
-Patricia
 Ace
 Charley
 Ciaran
 Ailish
 Ruairi
-Paulina
 Marc
 Alexa
 Riain
@@ -1063,9 +1034,7 @@ Everly
 Iosua
 Wynter
 John-Paul
-Chloé
 Marley
-Mairéad
 Seamie
 Nicola
 Vlad
@@ -1077,8 +1046,6 @@ Chantelle
 Olivers
 Sabrina
 Lugh
-Laila
-Mj
 Charlie
 Melanie
 Caitlyn
@@ -1141,7 +1108,6 @@ Amara
 Byron
 Amaya
 Cal
-Ella-Rose
 Dominick
 Indi
 Dominykas
@@ -1180,7 +1146,6 @@ Alistair
 Erick
 Hughie
 Macdara
-Sibéal
 Miley
 Moise
 Shona
@@ -1226,9 +1191,7 @@ Kaiser
 Kimberly
 Kit
 Vanesa
-Páraic
 Alexia
-Rónán
 Milly
 Jax
 Aoileann
@@ -1323,13 +1286,11 @@ Ksawery
 Gia
 Layton
 Ioana
-Rodrigo
 Lukne
 Rogan
 Marianna
 Sonnie
 Myra
-Tommy Lee
 Nel
 Tommy-Lee
 Raina
@@ -1355,7 +1316,6 @@ Idris
 Aodhla
 Ishaan
 Essie
-Jj
 Jonathon
 Ariyah
 Kevins
@@ -1421,7 +1381,6 @@ Clay
 Estera
 Iga
 Joyce
-Ruán
 Julianna
 Kimberley
 Sunny
@@ -1437,7 +1396,6 @@ Carmen
 Yazan
 Carolina
 Emmanuella
-Pádhraic
 Honor
 Lainey
 Alexis
@@ -1450,7 +1408,6 @@ Aris
 Emile
 Boston
 Hailie
-Brín
 Honey
 Glen
 Lidia

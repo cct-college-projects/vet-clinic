@@ -16,17 +16,29 @@ abstract public class Employee {
     protected double currentSalary;
     protected String title;
     protected String dateOfHire;
+    protected String task;
+        
 
     public Employee(int id, String name, String surname){
 
     	this.setEmp_id(id);
         this.setName(name);
         this.setSurname(surname);
+      // this.setTask(task);
     }
 
     public abstract double anualBonus();
 
-    public int getEmp_id() {
+  
+	public String getTask() {
+		return task;
+	}
+
+	public void setTask(String task) {
+		this.task = task;
+	}
+
+	public int getEmp_id() {
         return emp_id;
     }
 

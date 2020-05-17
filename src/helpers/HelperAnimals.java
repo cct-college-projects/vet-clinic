@@ -46,7 +46,7 @@ public class HelperAnimals {
 			}
 			br.close();
 		} catch(FileNotFoundException e) {
-			System.out.println("File not found. Eror: " +e.getMessage());
+			System.out.println("File not found. Error: " +e.getMessage());
 		}
 			catch (IOException e) {
 				System.out.println("File import has failed. Error: " + e.getMessage());

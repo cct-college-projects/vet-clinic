@@ -16,7 +16,7 @@ public class HelperMedStaff {
         givenname = new ArrayList<String>();
         String line;
 
-        System.out.println("Readin file given names...");
+        System.out.println("Reading file given names...");
         try {
             reader = new BufferedReader( new FileReader(FilesImport.GIVENNAME.getDirectory()));
             while ((line = reader.readLine()) != null) {
@@ -36,7 +36,7 @@ public class HelperMedStaff {
         ArrayList<String> surname;
         surname = new ArrayList<String>();
         String line;
-        System.out.println("Readin file surnames...");
+        System.out.println("Reading file surnames...");
         try {
             reader = new BufferedReader( new FileReader(FilesImport.SURNAME.getDirectory()));
             while ((line = reader.readLine()) != null) {
@@ -51,5 +51,66 @@ public class HelperMedStaff {
         System.out.println("Done!");
         return surname;
     }
-
+    
+    public static ArrayList<String> loadItTask(){
+    	ArrayList<String> itTask;
+    	itTask = new ArrayList<String>();
+    	String line;
+        System.out.println("Reading file task_it...");
+        try {
+            reader = new BufferedReader( new FileReader(FilesImport.TASKIT.getDirectory()));
+            while ((line = reader.readLine()) != null) {
+                itTask.add(line);
+            }
+            reader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found. Error: "+e.getMessage());
+        } catch (IOException e) {
+            System.out.println("File import has failed. Error: "+e.getMessage());
+        }
+        System.out.println("Done!");
+        return itTask;
+    }
+    
+    public static ArrayList<String> loadAccountantTask(){
+    	ArrayList<String> accountantTask;
+    	accountantTask = new ArrayList<String>();
+    	String line;
+        System.out.println("Reading file task_accountant...");
+        try {
+            reader = new BufferedReader( new FileReader(FilesImport.TASKACCOUNTANT.getDirectory()));
+            while ((line = reader.readLine()) != null) {
+            	accountantTask.add(line);
+            }
+            reader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found. Error: "+e.getMessage());
+        } catch (IOException e) {
+            System.out.println("File import has failed. Error: "+e.getMessage());
+        }
+        System.out.println("Done!");
+        return accountantTask;
+    }
+    
+    public static ArrayList<String> loadSecretaryTask(){
+    	ArrayList<String> secretaryTask;
+    	secretaryTask = new ArrayList<String>();
+    	String line;
+        System.out.println("Reading file task_secretary...");
+        try {
+            reader = new BufferedReader( new FileReader(FilesImport.TASKSECRETARY.getDirectory()));
+            while ((line = reader.readLine()) != null) {
+            	secretaryTask.add(line);
+            }
+            reader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found. Error: "+e.getMessage());
+        } catch (IOException e) {
+            System.out.println("File import has failed. Error: "+e.getMessage());
+        }
+        System.out.println("Done!");
+        return secretaryTask;
+    }
+    
+    
 }
