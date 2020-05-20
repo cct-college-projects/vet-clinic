@@ -18,12 +18,12 @@ public class SingletonLoadStaff {
 	private int maxStaffEmployees = 10;
 	private int idEmp = 0;
 	private String nameRand, surnameRand, itTaskRand, accountantTaskRand, secretaryTaskRand ;
-	private ArrayList<Veterinary> vetList = new ArrayList<Veterinary>();
-	private ArrayList<Surgeon> surgeonList = new ArrayList<Surgeon>();
-	private ArrayList<Nurse> nurseList = new ArrayList<Nurse>();
-	private ArrayList<Secretary> secretaryList = new ArrayList<Secretary>();
-	private ArrayList<Itsupport> itSupportList = new ArrayList<Itsupport>();
-	private ArrayList<Accountant> accountantList = new ArrayList<Accountant>();
+	private ArrayList<Employee> vetList = new ArrayList<>();
+	private ArrayList<Employee> surgeonList = new ArrayList<>();
+	private ArrayList<Employee> nurseList = new ArrayList<>();
+	private ArrayList<Employee> secretaryList = new ArrayList<>();
+	private ArrayList<Employee> itSupportList = new ArrayList<>();
+	private ArrayList<Employee> accountantList = new ArrayList<>();
 	private ArrayList<String> givennameList;
 	private ArrayList<String> surnameList;
 	private ArrayList<String> itTaskList;
@@ -36,17 +36,23 @@ public class SingletonLoadStaff {
 	private static SingletonLoadStaff instance = null;
 
 	private SingletonLoadStaff() {
+		//Load names
 		this.givennameList = HelperMedStaff.loadGivennames();
 		this.surnameList = HelperMedStaff.loadSurnames();
+		//Load tasks
 		this.itTaskList = HelperMedStaff.loadItTask();
 		this.accountantTaskList = HelperMedStaff.loadAccountantTask();
 		this.secretaryTaskList = HelperMedStaff.loadSecretaryTask();
+		// create staffs
 		if(!this.givennameList.isEmpty() && !this.surnameList.isEmpty() ){
+
 			this.givennameListSize = this.givennameList.size();
 			this.surnameListSize = this.surnameList.size();
+
 			this.itTaskListSize = this.itTaskList.size();
 			this.accountantTaskListSize = this.accountantTaskList.size();
 			this.secretaryTaskListSize = this.secretaryTaskList.size();
+
 			this.createMedicList();
 			this.createStaffList();
 		}
@@ -96,14 +102,17 @@ public class SingletonLoadStaff {
 				randomStaffType = random.nextInt(3);
 				idNameRand = random.nextInt(this.givennameListSize);
 				idSurnameRand = random.nextInt(this.surnameListSize);
+
+				nameRand = givennameList.get(idNameRand);
+				surnameRand = surnameList.get(idSurnameRand);
+
 				idItTaskRand = random.nextInt(this.itTaskListSize);
 				idAccountantTaskRand = random.nextInt(this.accountantTaskListSize);
 				idSecretaryTaskRand = random.nextInt(this.secretaryTaskListSize);
-				nameRand = givennameList.get(idNameRand);
-				surnameRand = surnameList.get(idSurnameRand);
-				itTaskRand = itTaskList.get(idItTaskRand);
+
+				itTaskRand 		   = itTaskList.get(idItTaskRand);
 				accountantTaskRand = accountantTaskList.get(idAccountantTaskRand);
-				secretaryTaskRand = secretaryTaskList.get(idSecretaryTaskRand);
+				secretaryTaskRand  = secretaryTaskList.get(idSecretaryTaskRand);
 				
 				
 				
@@ -125,27 +134,27 @@ public class SingletonLoadStaff {
 		return this.idEmp;
 	}
 
-	public ArrayList<Veterinary> getVetList() {
+	public ArrayList<Employee> getVetList() {
 		return vetList;
 	}
 
-	public ArrayList<Surgeon> getSurgeonList() {
+	public ArrayList<Employee> getSurgeonList() {
 		return surgeonList;
 	}
 
-	public ArrayList<Nurse> getNurseList() {
+	public ArrayList<Employee> getNurseList() {
 		return nurseList;
 	}
 
-	public ArrayList<Secretary> getSecretaryList() {
+	public ArrayList<Employee> getSecretaryList() {
 		return secretaryList;
 	}
 
-	public ArrayList<Itsupport> getItSupportList() {
+	public ArrayList<Employee> getItSupportList() {
 		return itSupportList;
 	}
 
-	public ArrayList<Accountant> getAccountantList() {
+	public ArrayList<Employee> getAccountantList() {
 		return accountantList;
 	}
 	

@@ -1,25 +1,45 @@
+Overgrown teeth
+wet_tail
+Weight_Changes
+Urinary_problems
+Teeth
+Strokes
+Respiratory_Infections
+Parasites_mites
+Parasites_worms
+Overgrown_nails
+Testicular_lumps
+External_parasites_ticks
+External_parasites_fleas
+External_parasites_mange
+Leptospirosis
+Heatstroke
+Intestinal_parasites
+Canine_parvovirus
+Canine_influenza
+Canine_distemper
 Candida
 Polyomavirus
 Psittacosis
 Leukemia Virus
 Ringworm
-High-Rise Syndrome
-Upper Respiratory Infections
-Bladder Infection
-ConstipationEar Mites
-EpiphoraEye Infections
-Eyelid Conditions Eyes
-Retinal Diseases
-Kidney Disease
-Kidney Failure
+High_Rise_Syndrome
+Upper_Respiratory_Infections
+Bladder_Infection
+ConstipationEar_Mites
+EpiphoraEye_Infections
+Eyelid_Conditions_Eyes
+Retinal_Diseases
+Kidney_Disease
+Kidney_Failure
 Mange
-Mast Cell Tumors
+Mast_Cell_Tumors
 Pancreatitis
 Pregnancy
 Worms
 Cancer
 Diabetes
-HeartwormKennel Cough
+HeartwormKennel_Cough
 RabiesParvovirus
 RingwormAllergies
 Arthritis
@@ -30,12 +50,22 @@ Enteritis
 Depression
 Deafness
 Demodectic Mange
-Dental Disease
-Fecal impaction
-Flea Allergy
+Dental_Disease
+Fecal_impaction
+Flea_Allergy
 Folliculitis
-Foreign Body (Intestinal)
+Foreign_Body_Intestinal
 Glaucoma
-Incontinence (Urinary)
+Incontinence_Urinary
 Obesity
 Osteoarthritis
+Salmonella
+Trichomoniasis
+Trichomoniasis
+Lyme_Disease
+Snuffles
+Hairballs
+Uterine tumours
+Myxomatosis
+Calicivirus
+Overgrown_teeth

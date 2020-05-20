@@ -4,13 +4,8 @@ package classes;
 
 public class AdminStaff extends Employee {
 	
-	
-	
-	
 	public AdminStaff (int id, String name, String surname, String task) {
-		super(id, name, surname);
-		this.task = task;
-				
+		super(id, name, surname, task);
 	}
 		
 	//Bonus applied for adminStaff will be an amount of 12% per year over the current wages (currentSalaray)

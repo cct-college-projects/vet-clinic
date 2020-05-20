@@ -38,10 +38,7 @@ import java.util.Random;
 			this.animalnameListSize = this.animalnameList.size();
 			this.animalillnessListSize = this.animalillnessList.size();
 			this.createAnimalList();
-			
-			
 		}
-		
 	}
 	
 	public static SingletonLoadAnimals getInstance() {

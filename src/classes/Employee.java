@@ -24,7 +24,14 @@ abstract public class Employee {
     	this.setEmp_id(id);
         this.setName(name);
         this.setSurname(surname);
-      // this.setTask(task);
+    }
+
+    public Employee(int id, String name, String surname, String task){
+
+        this.setEmp_id(id);
+        this.setName(name);
+        this.setSurname(surname);
+        this.setTask(task);
     }
 
     public abstract double anualBonus();

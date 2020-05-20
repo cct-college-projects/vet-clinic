@@ -10,9 +10,9 @@ import java.util.ArrayList;
 
 public class VetClinic {
 
-    private ArrayList<Veterinary> vetList;
-    private ArrayList<Surgeon> surgeonList;
-    private ArrayList<Nurse> nurseList;
+    private ArrayList<Employee> vetList;
+    private ArrayList<Employee> surgeonList;
+    private ArrayList<Employee> nurseList;
     private SingletonLoadStaff staffs;
     private SingletonLoadAnimals animals;
 
@@ -30,13 +30,13 @@ public class VetClinic {
         
         this.animals = SingletonLoadAnimals.getInstance();
         
-        ToScreen.showAnimalAll();
+        //ToScreen.showAnimalAll();
         
-       // Search for a desired name in a list of one type of animal
-      //searchAnimal(this.animals.getDogList(), "Jax");
+        //Search for a desired name in a list of one type of animal
+        //searchAnimal(this.animals.getDogList(), "Jax");
         
         //Search for a specific name on the Animal list. It will bring all type of animals with the desired name.
-        searchAnimal(this.animals.getAllAnimals(), "toto");
+        //searchAnimal(this.animals.getAllAnimals(), "toto");
     }
     //Method to show all the animals with their attributes in a list
     public void searchAnimal(ArrayList<Animals> arrayList, String name){

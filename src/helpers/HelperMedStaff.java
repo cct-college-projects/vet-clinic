@@ -1,6 +1,7 @@
 package helpers;
 
 import enums.FilesImport;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -54,7 +55,7 @@ public class HelperMedStaff {
     
     public static ArrayList<String> loadItTask(){
     	ArrayList<String> itTask;
-    	itTask = new ArrayList<String>();
+    	itTask = new ArrayList<>();
     	String line;
         System.out.println("Reading file task_it...");
         try {
