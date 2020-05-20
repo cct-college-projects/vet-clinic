@@ -17,11 +17,13 @@ import java.util.Random;
 	private int animal_id = 0;
 	private int age = 0;
 	private String nameRandom, illnessRandom;
-	private ArrayList<Dog> dogList = new ArrayList<Dog>();
-	private ArrayList<Cat> catList = new ArrayList<Cat>();
-	private ArrayList<Bird> birdList = new ArrayList<Bird>();
-	private ArrayList<Rabbit> rabbitList = new ArrayList<Rabbit>();
-	private ArrayList<Hamster> hamsterList = new ArrayList<Hamster>();
+	//ArrayLists where each type of animal will be stored after the program generate randomly animals with age and medical
+	//condition status
+	private ArrayList<Animals> dogList = new ArrayList<>();
+	private ArrayList<Animals> catList = new ArrayList<>();
+	private ArrayList<Animals> birdList = new ArrayList<>();
+	private ArrayList<Animals> rabbitList = new ArrayList<>();
+	private ArrayList<Animals> hamsterList = new ArrayList<>();
 	private ArrayList<String> animalnameList;
 	private ArrayList<String> animalillnessList;
 	private Random rd = new Random();
@@ -84,26 +86,36 @@ import java.util.Random;
 	}
 	
 
-	public ArrayList<Dog> getDogList() {
+	public ArrayList<Animals> getDogList() {
 		return dogList;
 	}
 
-	public ArrayList<Cat> getCatList() {
+	public ArrayList<Animals> getCatList() {
 		return catList;
 	}
 
-	public ArrayList<Bird> getBirdList() {
+	public ArrayList<Animals> getBirdList() {
 		return birdList;
 	}
 	
-	public ArrayList<Hamster> getHamsterList() {
+	public ArrayList<Animals> getHamsterList() {
 		return hamsterList;
 	}
 	
-	public ArrayList<Rabbit> getRabbitList() {
+	public ArrayList<Animals> getRabbitList() {
 		return rabbitList;
 	}
-	
+	//Method to get all the lists by each animal type and return in an unique Array to be sorted for search by name later on
+	public ArrayList<Animals> getAllAnimals(){
+		ArrayList<Animals> allAnimals = new ArrayList<Animals>();
+		allAnimals.addAll(this.getDogList());
+		allAnimals.addAll(this.getCatList());
+		allAnimals.addAll(this.getBirdList());
+		allAnimals.addAll(this.getHamsterList());
+		allAnimals.addAll(this.getRabbitList());
+		
+		return allAnimals;
+	}
 	
 	public void close() {
 		

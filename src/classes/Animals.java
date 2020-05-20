@@ -6,9 +6,7 @@ abstract public class Animals {
 	protected int age;
 	protected String medicalCondition;
 	
-	
-	
-	
+			
 	//Constructor
 	public Animals(int animal_id, String name, int age, String medicalCondition) {
 		this.setAnimal_id(animal_id);
@@ -43,10 +41,10 @@ abstract public class Animals {
 	public void setMedicalCondition(String medicalCondition) {
 		this.medicalCondition = medicalCondition;
 	}
-	
+	// Method to print all the information of the animals in the final list
 	public String getFullInformation(){
         if(this.name != null && this.age != 0 && this.medicalCondition != null){
-            return this.name + " - age: " + age + " - Illness: " + medicalCondition;
+            return "type: " + this.getClass().getSimpleName() +" - name: " + this.name + " - age: " + age + " - Medical Condition: " + medicalCondition;
         } else if(this.name != null){
             return this.name;
         }   else if(this.medicalCondition != null){
