@@ -21,6 +21,8 @@ public class VetClinic {
     }
 
     public VetClinic(){
+    	
+    	    	
         this.staffs = SingletonLoadStaff.getInstance();
         this.vetList     = this.staffs.getVetList();
         this.surgeonList = this.staffs.getSurgeonList();
@@ -29,16 +31,18 @@ public class VetClinic {
         ToScreen.showStaffAll();
         
         this.animals = SingletonLoadAnimals.getInstance();
-        
-        //ToScreen.showAnimalAll();
-        
-        //Search for a desired name in a list of one type of animal
-        //searchAnimal(this.animals.getDogList(), "Jax");
+;
+
+       ToScreen.showAnimalAll();
+
+        // Search for a desired name in a list of one type of animal
+      searchAnimal(this.animals.getDogList(), "Jax");
+
         
         //Search for a specific name on the Animal list. It will bring all type of animals with the desired name.
         //searchAnimal(this.animals.getAllAnimals(), "toto");
     }
-    //Method to show all the animals with their attributes in a list
+//    Method to show all the animals with their attributes in a list
     public void searchAnimal(ArrayList<Animals> arrayList, String name){
         ArrayList<Animals> searchResult = AnimalSearch.binary(arrayList, name);
         System.out.println("-------------------------------------------------------");
@@ -47,4 +51,6 @@ public class VetClinic {
             System.out.println("ID: "+searchResult.get(i).getAnimal_id()+" - Animal: "+searchResult.get(i).getClass().getSimpleName()+" - "+searchResult.get(i).getFullInformation());
         }
     }
+    
+
 }
