@@ -10,29 +10,9 @@ public class ToScreen {
 
     public static void showStaffAll(){
         SingletonLoadStaff staffs = SingletonLoadStaff.getInstance();
-        showMessage("### VETS ###");
-        for (int i = 0; i < staffs.getVetList().size(); i++) {
-            showMessage(staffs.getVetList().get(i).getEmp_id()+" - "+staffs.getVetList().get(i).getFullName());
-        }
-        showMessage("### SURGEONS ###");
-        for (int i = 0; i < staffs.getSurgeonList().size(); i++) {
-            showMessage(staffs.getSurgeonList().get(i).getEmp_id()+" - "+staffs.getSurgeonList().get(i).getFullName());
-        }
-        showMessage("### NURSES ###");
-        for (int i = 0; i < staffs.getNurseList().size(); i++) {
-            showMessage(staffs.getNurseList().get(i).getEmp_id()+" - "+staffs.getNurseList().get(i).getFullName());
-        }
-        showMessage("### SECRETARY ###");
-        for (int i = 0; i < staffs.getSecretaryList().size(); i++) {
-            showMessage(staffs.getSecretaryList().get(i).getEmp_id()+" - "+staffs.getSecretaryList().get(i).getFullName());
-        }
-        showMessage("### IT SUPPORT ###");
-        for (int i = 0; i < staffs.getItSupportList().size(); i++) {
-            showMessage(staffs.getItSupportList().get(i).getEmp_id()+" - "+staffs.getItSupportList().get(i).getFullName());
-        }
-        showMessage("### ACCOUNTANT ###");
-        for (int i = 0; i < staffs.getAccountantList().size(); i++) {
-            showMessage(staffs.getAccountantList().get(i).getEmp_id()+" - "+staffs.getAccountantList().get(i).getFullName());
+        showMessage("### Employees ###");
+        for (int i = 0; i < staffs.getAllEmployee().size(); i++) {
+            showMessage(staffs.getAllEmployee().get(i).getEmp_id()+" - "+staffs.getAllEmployee().get(i).getClass().getSimpleName()+" - "+staffs.getAllEmployee().get(i).getFullName());
         }
 
     }

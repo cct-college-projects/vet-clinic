@@ -157,8 +157,18 @@ public class SingletonLoadStaff {
 	public ArrayList<Employee> getAccountantList() {
 		return accountantList;
 	}
-	
-	
+
+	public ArrayList<Employee> getAllEmployee(){
+		ArrayList<Employee> allEmployee = new ArrayList<>();
+		allEmployee.addAll(this.getNurseList());
+		allEmployee.addAll(this.getSurgeonList());
+		allEmployee.addAll(this.getVetList());
+		allEmployee.addAll(this.getAccountantList());
+		allEmployee.addAll(this.getItSupportList());
+		allEmployee.addAll(this.getSecretaryList());
+
+		return allEmployee;
+	}
 
 	public void close() {
 		
