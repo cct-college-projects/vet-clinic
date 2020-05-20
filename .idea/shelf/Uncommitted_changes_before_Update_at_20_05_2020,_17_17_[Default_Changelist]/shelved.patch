@@ -1,0 +1,1110 @@
+Index: out/production/vet-clinic/files/animalillness.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>Candida\nPolyomavirus\nPsittacosis\nLeukemia Virus\nRingworm\nHigh-Rise Syndrome\nUpper Respiratory Infections\nBladder Infection\nConstipationEar Mites\nEpiphoraEye Infections\nEyelid Conditions Eyes\nRetinal Diseases\nKidney Disease\nKidney Failure\nMange\nMast Cell Tumors\nPancreatitis\nPregnancy\nWorms\nCancer\nDiabetes\nHeartwormKennel Cough\nRabiesParvovirus\nRingwormAllergies\nArthritis\nBronchitis\nInfluenza Virus\nDiarrhea\nEnteritis\nDepression\nDeafness\nDemodectic Mange\nDental Disease\nFecal impaction\nFlea Allergy\nFolliculitis\nForeign Body (Intestinal)\nGlaucoma\nIncontinence (Urinary)\nObesity\nOsteoarthritis
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/vet-clinic/files/animalillness.txt	(revision 8fcd5dbca6ef6613ceb3bee0107d8b181fb1d358)
++++ out/production/vet-clinic/files/animalillness.txt	(date 1589807719870)
+@@ -1,25 +1,45 @@
++Overgrown teeth
++wet_tail
++Weight_Changes
++Urinary_problems
++Teeth
++Strokes
++Respiratory_Infections
++Parasites_mites
++Parasites_worms
++Overgrown_nails
++Testicular_lumps
++External_parasites_ticks
++External_parasites_fleas
++External_parasites_mange
++Leptospirosis
++Heatstroke
++Intestinal_parasites
++Canine_parvovirus
++Canine_influenza
++Canine_distemper
+ Candida
+ Polyomavirus
+ Psittacosis
+ Leukemia Virus
+ Ringworm
+-High-Rise Syndrome
+-Upper Respiratory Infections
+-Bladder Infection
+-ConstipationEar Mites
+-EpiphoraEye Infections
+-Eyelid Conditions Eyes
+-Retinal Diseases
+-Kidney Disease
+-Kidney Failure
++High_Rise_Syndrome
++Upper_Respiratory_Infections
++Bladder_Infection
++ConstipationEar_Mites
++EpiphoraEye_Infections
++Eyelid_Conditions_Eyes
++Retinal_Diseases
++Kidney_Disease
++Kidney_Failure
+ Mange
+-Mast Cell Tumors
++Mast_Cell_Tumors
+ Pancreatitis
+ Pregnancy
+ Worms
+ Cancer
+ Diabetes
+-HeartwormKennel Cough
++HeartwormKennel_Cough
+ RabiesParvovirus
+ RingwormAllergies
+ Arthritis
+@@ -30,12 +50,22 @@
+ Depression
+ Deafness
+ Demodectic Mange
+-Dental Disease
+-Fecal impaction
+-Flea Allergy
++Dental_Disease
++Fecal_impaction
++Flea_Allergy
+ Folliculitis
+-Foreign Body (Intestinal)
++Foreign_Body_Intestinal
+ Glaucoma
+-Incontinence (Urinary)
++Incontinence_Urinary
+ Obesity
+-Osteoarthritis
+\ No newline at end of file
++Osteoarthritis
++Salmonella
++Trichomoniasis
++Trichomoniasis
++Lyme_Disease
++Snuffles
++Hairballs
++Uterine tumours
++Myxomatosis
++Calicivirus
++Overgrown_teeth
+\ No newline at end of file
+Index: .idea/uiDesigner.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/uiDesigner.xml	(date 1589928892118)
++++ .idea/uiDesigner.xml	(date 1589928892118)
+@@ -0,0 +1,124 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Palette2">
++    <group name="Swing">
++      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
++      </item>
++      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
++        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
++        <initial-values>
++          <property name="text" value="Button" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="RadioButton" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="CheckBox" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="Label" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
++          <preferred-size width="-1" height="20" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
++      </item>
++    </group>
++  </component>
++</project>
+\ No newline at end of file
+Index: out/production/vet-clinic/files/givenname.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>Finbar\nJack\nEmily\nJames\nAva\nDaniel\nEmma\nConor\nSophie\nSeán\nAmelia\nAdam\nElla\nNoah\nLucy\nMichael\nGrace\nCharlie\nMia\nLuke\nJack\nEmily\nJames\nGrace\nNoah\nFiadh\nConor\nSophie\nDaniel\nHannah\nAdam\nAmelia\nLiam\nAva\nTadhg\nEllie\nLuke\nElla\nCharlie\nMia\nDarragh\nLucy\nHarry\nEmma\nOisín\nLily\nMichael\nOlivia\nAlex\nChloe\nFionn\nAoife\nCillian\nCaoimhe\nThomas\nMolly\nJamie\nAnna\nPatrick\nSophia\nRían\nHolly\nFinn\nFreya\nSeán\nSaoirse\nOliver\nKate\nRyan\nSadie\nDylan\nRobyn\nMatthew\nKatie\nBen\nRuby\nBobby\nEvie\nJohn\nÉabha\nLeo\nCara\nCian\nSarah\nAaron\nIsabelle\nMax\nIsla\nEthan\nAlice\nAlexander\nLeah\nJake\nSadhbh\nTom\nEva\nJacob\nErin\nAlfie\nRóisín\nDavid\nZoe\nSenan\nSofia\nOscar\nZara\nSam\nWillow\nCallum\nCharlotte\nMason\nLauren\nOllie\nJessica\nAidan\nFaye\nTheo\nCiara\nWilliam\nClodagh\nLeon\nMillie\nJoseph\nIsabella\nTommy\nEve\nJoshua\nNiamh\nLucas\nMaya\nEvan\nLayla\nDonnacha\nAda\nLogan\nRosie\nLuca\nAbigail\nSamuel\nJulia\nNathan\nClara\nCathal\nMaisie\nShay\nAmy\nArchie\nMaria\nJayden\nAria\nGeorge\nAlannah\nKai\nAnnie\nAndrew\nHarper\nLouis\nAoibhín\nDanny\nEmilia\nRory\nAmber\nTheodore\nBonnie\nFreddie\nMila\nEoin\nHeidi\nBenjamin\nAilbhe\nBilly\nBella\nHugo\nAbbie\nMuhammad\nIvy\nRonan\nAoibheann\nRobert\nRose\nArthur\nSienna\nKayden\nElizabeth\nChristopher\nGeorgia\nHenry\nRebecca\nFrankie\nLaura\nDara\nEllen\nKyle\nMéabh\nRuairí\nAlexandra\nEdward\nKayla\nIsaac\nIsabel\nMartin\nHollie\nOdhran\nMary\nEli\nÁine\nMark\nAisling\nAnthony\nHazel\nJosh\nRachel\nZach\nTara\nJoey\nEvelyn\nOdhrán\nMegan\nKevin\nDoireann\nTadgh\nDaisy\nJaxon\nHanna\nScott\nLara\nSonny\nMollie\nTomás\nMaeve\nCormac\nSara\nPeter\nLilly\nSean\nLuna\nEoghan\nVictoria\nBrody\nHailey\nShane\nHayley\nKillian\nPoppy\nTiernan\nFíadh\nSebastian\nZoey\nCarter\nPenny\nHunter\nPippa\nDaithí\nAyla\nCiarán\nAyda\nRian\nNina\nTeddy\nAnnabelle\nTyler\nPenelope\nArlo\nIndie\nGabriel\nAlanna\nJackson\nMaja\nEric\nPaige\nCody\nLola\nÉanna\nNaoise\nLorcan\nCora\nAlan\nMatilda\nFilip\nElsie\nJoe\nLaoise\nElliot\nNora\nRhys\nLexi\nOran\nEleanor\nCalvin\nHallie\nNicholas\nLottie\nBlake\nAoibhe\nHarrison\nRuth\nPaddy\nLena\nBrian\nPhoebe\nCaleb\nNicole\nLouie\nEimear\nHarvey\nJane\nCole\nSíofra\nPáidí\nSiún\nSéan\nBrooke\nReuben\nMya\nDenis\nGracie\nTed\nSummer\nIarlaith\nTess\nJason\nEliza\nDonagh\nCaitlin\nElliott\nAlison\nRiley\nDarcie\nIarla\nEsmé\nLewis\nMadison\nJordan\nLucia\nAntoni\nMaggie\nElijah\nCallie\nCooper\nMuireann\nPaul\nBeth\nHugh\nKathleen\nRowan\nTessa\nDaire\nCroía\nGerard\nAoibhinn\nKeelan\nJasmine\nKian\nIsobel\nJonathan\nJuliette\nJude\nSavannah\nLukas\nRiley\nJakub\nCaragh\nZack\nKara\nJohnny\nStella\nStephen\nLiliana\nNiall\nAriana\nCharles\nFlorence\nFelix\nDarcy\nLevi\nEsme\nBradley\nRíona\nFiachra\nZuzanna\nConn\nBridget\nZac\nNadia\nCameron\nGabriela\nKacper\nAurora\nMilo\nÉala\nDáire\nRóise\nDáithí\nKayleigh\nRobbie\nCassie\nOlly\nElena\nCaolán\nAnastasia\nOwen\nNevaeh\nCorey\nAlicia\nOskar\nAaliyah\nConall\nAllie\nJan\nScarlett\nJonah\nNaomi\nRobin\nMargaret\nMateo\nMaia\nAdrian\nElise\nShea\nFarrah\nToby\nKatelyn\nDiarmuid\nShauna\nMyles\nOrla\nLeonardo\nAimee\nNed\nVanessa\nGrayson\nAlana\nSéamus\nNatalia\nDean\nRhea\nJesse\nSkye\nZachary\nApril\nDominic\nAlicja\nPádraig\nNancy\nRuadhán\nMae\nColm\nArabella\nRichard\nKeeva\nPhilip\nAoibh\nFrank\nRobin\nWill\nPearl\nDan\nEden\nChristian\nRemi\nKeegan\nTaylor\nMatteo\nAlisha\nAodhán\nCatherine\nGearóid\nCasey\nReece\nNessa\nMarcel\nLacey\nFranciszek\nThea\nParker\nIris\nIan\nMaddison\nNoel\nTilly\nConan\nBláithín\nRocco\nLydia\nAleksander\nZofia\nDarius\nNell\nCasey\nAmelie\nJaxson\nTeagan\nKieran\nAlyssa\nTimothy\nHelena\nNaoise\nJuliet\nPeadar\nLia\nMatei\nBeatrice\nKaiden\nCadhla\nFíonn\nFia\nRoss\nEdie\nColin\nHarley\nLennon\nViolet\nEmmet\nOliwia\nLuka\nJade\nAli\nMelissa\nMikey\nSally\nMaximilian\nElle\nAiden\nLeila\nDamian\nAisha\nArt\nGabriella\nHarley\nAddison\nFinley\nMaryam\nDaragh\nElodie\nConnor\nFrankie\nDominik\nGráinne\nAustin\nAlex\nCaelan\nDiana\nJimmy\nDaria\nFlynn\nKyra\nHudson\nAna\nCían\nLana\nMícheál\nLillie\nTiarnán\nNorah\nCalum\nBelle\nLee\nQuinn\nTristan\nÉadaoin\nMarcus\nOrlaith\nDonal\nErica\nDonncha\nFaith\nBernard\nLibby\nLochlann\nLillian\nMaksymilian\nLyla\nStefan\nHarriet\nNathaniel\nArya\nJulian\nCali\nCayden\nEllie-Mae\nBeau\nNova\nElias\nSkylar\nLachlan\nAoibhínn\nEzra\nAbby\nGavin\nJennifer\nSeamus\nMichaela\nBrendan\nAli\nSzymon\nClaire\nVincent\nYasmin\nFrancis\nDearbhla\nRuben\nLucie\nIbrahim\nPiper\nTobias\nBláthnaid\nFaolán\nClíodhna\nBrandon\nÚna\nDarren\nEabha\nSimon\nSorcha\nJay\nAndrea\nCaolan\nKelsey\nHayden\nRosa\nVictor\nFrancesca\nMikolaj\nAliyah\nAlexandru\nKlara\nMohamed\nMabel\nAndrei\nLila\nAndy\nBailey\nCaiden\nEmmie\nJace\nKaia\nCuán\nNela\nEóin\nSkyler\nMicheál\nRoisín\nOisin\nSinéad\nJustin\nDanielle\nBrooklyn\nAleksandra\nKealan\nAmanda\nFrederick\nBronagh\nSeth\nDarcey\nDawson\nEma\nLochlan\nHope\nOdin\nAntonia\nBeauden\nSaibh\nBarry\nJuno\nMaxim\nMargot\nJim\nSíomha\nRoman\nMoya\nAhmad\nStephanie\nLuan\nChristina\nBruno\nMartha\nRalph\nCarly\nTymon\nMarie\nJasper\nMaebh\nEnzo\nRia\nMiles\nAlisa\nRua\nMariam\nEwan\nMiriam\nIvan\nEvelina\nTroy\nElisa\nPearse\nConnie\nFerdia\nBillie\nJeremiah\nLiadh\nWiktor\nPola\nDiego\nMay\nArtur\nAvery\nOlaf\nPriya\nLeighton\nAriella\nLorenzo\nMyla\nCulann\nLouise\nJayce\nJoanna\nOtis\nAlly\nEóghan\nAnnabel\nSé\nCleo\nDawid\nEloise\nMorgan\nVivienne\nMohammad\nDara\nTony\nGloria\nNikodem\nKali\nMohammed\nEliana\nNicolas\nZahra\nCuan\nMaisy\nMalachy\nMaci\nCaden\nCroíadh\nRafael\nHeather\nEllis\nClaudia\nAlec\nAideen\nBarra\nAnn\nPaudie\nElisha\nLenny\nBethany\nReggie\nJoy\nShéa\nSadbh\nTomas\nMeghan\nDillon\nAndreea\nDeclan\nMarta\nKane\nArianna\nAshton\nHalle\nDonnchadh\nIseult\nBill\nAyesha\nAlbert\nMyah\nFabian\nAya\nCristian\nEmelia\nAyaan\nKylie\nQuinn\nAurelia\nBrayden\nAlba\nKyron\nHarlow\nTommie\nIndy\nTymoteusz\nKenzie\nAyan\nKhloe\nBrogan\nLilah\nCarson\nSaorlaith\nMylo\nValentina\nOmar\nAdeline\nSpencer\nDani\nZain\nHaniya\nNico\nStevie\nZion\nSeoidín\nIgnacy\nShannon\nRuadh\nJodie\nGael\nKelly\nCúan\nWiktoria\nDónal\nJenna\nSeán Óg\nAshley\nSéimí\nKarolina\nPadraig\nSasha\nPatryk\nFatima\nMateusz\nHelen\nGary\nKeela\nEuan\nNatalie\nOlan\nBeibhinn\nMarco\nMeadhbh\nUltan\nWeronika\nNatan\nErika\nOliwier\nImogen\nChris\nAngelina\nPiotr\nWinnie\nTomasz\nAmira\nBenas\nAida\nEryk\nMilana\nDomhnall\nAutumn\nThady\nMarcelina\nAxel\nReina\nEmanuel\nRylee\nRohan\nMichelle\nAsher\nLeona\nFiach\nFiona\nAilbe\nMeabh\nBodhi\nCarla\nBrodie\nKaitlyn\nZayn\nBrianna\nBogdan\nKacey\nHamish\nNikola\nMatias\nSamantha\nRemy\nLinda\nRiver\nSandra\nAlbie\nSerena\nCaoimhín\nVeronica\nKyren\nEileen\nLorcán\nJohanna\nÓdhran\nLauryn\nMicheal\nMadeleine\nTiarnan\nLouisa\nMichal\nLaragh\nDavin\nMilena\nJeremy\nIzabella\nKajus\nPaula\nHubert\nBianca\nHamza\nAlessia\nPedro\nAnnalise\nLeonard\nOlive\nAjay\nCeoladh\nMatt\nEdith\nMaximus\nRyleigh\nRaphael\nSonia\nSyed\nAnaya\nEduard\nBowie\nMilan\nVada\nRio\nEibhlín\nWyatt\nEsmée\nEmmett\nTori\nFreddy\nGabrielle\nTajus\nJulie\nYusuf\nAngel\nJenson\nLexie\nKody\nLea\nTeodor\nUna\nÓisín\nNeasa\nSenán\nDemi\nSteven\nKarina\nDamien\nEsther\nEamon\nPia\nNeil\nEmilija\nEamonn\nLeyla\nJoel\nMartina\nRoan\nAnne\nAhmed\nDaniela\nLaurence\nRosemary\nWarren\nJessie\nErik\nKyla\nKarol\nMaura\nPauric\nSeren\nEmil\nMai\nMike\nPolly\nMiguel\nKornelia\nRayan\nSelena\nAbdul\nDelia\nDennis\nEllie-May\nJonas\nGiulia\nTerence\nKitty\nCain\nDakota\nKristian\nElla-Mae\nKyran\nLily-Mae\nMarko\nMaddie\nEden\nMelody\nKaylum\nSofija\nLochlainn\nBlake\nLucca\nJune\nBraxton\nPhilippa\nArijus\nCaitlín\nKarson\nÓrlaith\nRayyan\nRéiltín\nAvery\nZoë\nKayson\nSíne\nCroí\nAlaia\nFionán\nAbbey\nPádraic\nEmer\nSéadna\nPatricia\nAce\nCharley\nCiaran\nAilish\nRuairi\nPaulina\nMarc\nAlexa\nRiain\nCaoilinn\nEmmanuel\nEilish\nTravis\nEmilie\nRaymond\nJamie\nBartosz\nGreta\nBailey\nMakayla\nGlenn\nMary-Kate\nJerry\nAdele\nAron\nChristine\nGregory\nKaya\nTurlough\nMiya\nAbel\nEryn\nEddie\nLina\nKrzysztof\nAmina\nXavier\nElisabeth\nWojciech\nGianna\nMarkus\nIrene\nRegan\nIzabela\nRicky\nKaylee\nAmir\nLily-Rose\nKylan\nAifric\nLuis\nAlma\nMustafa\nBobbi\nNataniel\nEllie-Mai\nViktor\nGaia\nMalik\nLois\nRion\nAlia\nWalter\nDorothy\nZane\nDrew\nAronas\nGeorgie\nAlessio\nLilianna\nDarach\nMelisa\nHeath\nAubrey\nKoby\nIda\nMannix\nKyah\nMarkas\nRayna\nPhoenix\nStefania\nRares\nEverleigh\nCruz\nEverly\nIosua\nWynter\nJohn-Paul\nChloé\nMarley\nMairéad\nSeamie\nNicola\nVlad\nLisa\nJordi\nRachael\nKoa\nChantelle\nOlivers\nSabrina\nLugh\nLaila\nMj\nCharlie\nFionnán\nMelanie\nMaitiú\nCaitlyn\nÓlan\nKlaudia\nUltán\nDeborah\nSeanán\nAngela\nOakley\nStacey\nDaithi\nNia\nKarl\nTianna\nBryan\nZainab\nPierce\nTeresa\nKamil\nCeline\nOlivier\nNelly\nMathew\nSaorla\nConal\nAliya\nZak\nJudith\nAran\nLili\nNikita\nNeala\nPreston\nParis\nRoy\nAlise\nIgor\nAmna\nDevin\nAnya\nMario\nLeia\nAbdullah\nMackenzie\nAndre\nSelina\nFeidhlim\nWinifred\nMaksim\nAmalia\nNojus\nAdah\nDevon\nAdelina\nGerry\nAgnes\nMaurice\nAlayna\nStanislaw\nAmara\nByron\nAmaya\nCal\nElla-Rose\nDominick\nIndi\nDominykas\nJoni\nAryan\nLiana\nCallan\nMacie\nChristy\nMelania\nCon\nNoor\nCullen\nRebeca\nDanielius\nRowan\nFred\nSyeda\nHassan\nAyra\nKaleb\nBeatrix\nKalvin\nFallon\nAnas\nFreyja\nBeniamin\nNoreen\nEphraim\nVayda\nRuan\nHarleigh\nTimmy\nWinter\nAlistair\nAibhín\nErick\nBéibhinn\nAbraham\nBríd\nBobbie\nCáit\nBruce\nÉirinn\nCoby\nÍde\nDavi\nMáire\nDorian\nNainsí\nEvanas\nNóra\nHaris\nÓrla\nHughie\nRéaltín\nMacdara\nSibéal\nMiley\nÉrin\nMoise\nShona\nNikolas\nKeira\nRichie\nAoibhin\nBenny\nMartyna\nConstantin\nKirsten\nDalton\nKatherine\nHerkus\nTia\nIarfhlaith\nCaroline\nKenny\nGabija\nKobi\nJorja\nKylian\nDaniella\nMusa\nIndia\nNoa\nSusan\nTimas\nClare\nTudor\nEnya\nRico\nCaoilainn\nKarter\nAdriana\nAri\nKiara\nHenryk\nMadeline\nZayan\nSamara\nKaiser\nKimberly\nKit\nVanesa\nPáraic\nAlexia\nRónán\nMilly\nJax\nAoileann\nCraig\nHayleigh\nShaun\nKira\nMatas\nHana\nClayton\nLivia\nKenneth\nAlva\nTim\nAnais\nSaul\nDarci\nDaryl\nDora\nGareth\nGwen\nMaxwell\nKaja\nSeanan\nMaud\nCailum\nRosanna\nLarry\nWendy\nEmilis\nAlina\nJody\nAlix\nKeenan\nAllison\nAedan\nAmeila\nAllan\nAnastazja\nFynn\nKhadija\nJaiden\nKiya\nRaul\nLavinia\nAlfred\nAiza\nAngelo\nArwen\nCahir\nAubree\nChulainn\nAverie\nCulainn\nBarbara\nGiovanni\nCeleste\nGuy\nEibhlin\nJia\nEshaal\nKajetan\nInes\nLincoln\nJasmina\nMilosz\nJosie\nOrin\nKalina\nPavel\nLeja\nQuin\nMiley\nZayd\nMinnie\nBarney\nTalia\nBorys\nTheodora\nDexter\nYasmina\nEzekiel\nBella-Rose\nFranklin\nBrooklyn\nAarav\nDelilah\nAodh\nEila\nKasper\nEmmi\nKsawery\nGia\nLayton\nIoana\nRodrigo\nLukne\nRogan\nMarianna\nSonnie\nMyra\nTommy Lee\nNel\nTommy-Lee\nRaina\nYoussef\nSerah\nZaid\nTillie\nZakaria\nYara\nAzlan\nEllie mae\nCaolin\nAdaline\nDario\nEffie\nEyad\nFaya\nGabriels\nPaisley\nGene\nTuiren\nIdris\nAodhla\nIshaan\nEssie\nJj\nAimée\nJonathon\nAriyah\nKevins\nAyat\nLughaidh\nClíona\nMathias\nEvelin\nMohamad\nMirha\nSantiago\nRenée\nSetanta\nFiádh\nTimur\nLeanne\nValentin\nChelsea\nVladimir\nNadine\nYahya\nAvril\nYaseen\nJosephine\nCoen\nCarrie\nDenver\nKamila\nMieszko\nLorna\nVihaan\nSimone\nAlby\nDawn\nColby\nJenny\nDamir\nKathryn\nThiago\nSive\nTyson\nGabriele\nYousuf\nKaci\nClark\nTiffany\nDonnie\nMagdalena\nCobi\nMikayla\nJakov\nAlexandria\nKiaan\nAntonina\nAdvik\nKaty\nAodán\nFionnuala\nAzaan\nJana\nBernardo\nJess\nBradán\nKatrina\nCadán\nPhilomena\nClay\nEstera\nÓran\nIga\nRónan\nJoyce\nRuán\nJulianna\nSeánie\nKimberley\nSunny\nLarissa\nThéo\nPatricija\nRuaidhrí\nSofie\nLawson\nYusra\nKaison\nCamelia\nLaoch\nCarmen\nYazan\nCarolina\nOrán\nEmmanuella\nPádhraic\nHonor\nT J\nLainey\nTeidí\nAlexis\nCúán\nAudrey\nDenny\nBria\nBenett\nEbony\nAris\nEmile\nBoston\nHailie\nBrín\nHoney\nGlen\nLidia\nEnda\nAdela\nAodhan\nAdelaide\nFintan\nAmelia-Rose\nPadraic\nAmirah\nDesmond\nAnabelle\nFinlay\nEla\nRossa\nElia\nAntonio\nElina\nZachariah\nEllie-Rose\nDiarmaid\nEmmy\nKilian\nIsha\nDion\nJannat\nFinian\nKaiya\nKornel\nKarlie\nMarcos\nKendall\nTrevor\nKourtney\nTerry\nKyrah\nCarlos\nLily Mae\nDamon\nLyra\nJared\nMalwina\nKaden\nMara\nMalachi\nMarnie\nRussell\nMiah\nSami\nMigle\nSolomon\nMoira\nWesley\nNika\nAleks\nReagan\nAnton\nSoraya\nDwayne\nThalia\nEnrico\nTreasa\nErikas\nVivien\nFelim\nAfric\nGabrielius\nAlena\nJarlath\nAriah\nJerome\nAtene\nKallum\nAthena\nLennox\nBetty\nRoberto\nConstance\nRui\nDarla\nSamson\nDiya\nTaha\nEman\nCohen\nFatimah\nDon\nFlora\nGeordan\nGiorgia\nIsaiah\nJayda\nJohan\nKady\nJon\nKaelyn\nKade\nKora\nKeagan\nLeen\nKurt\nLiepa\nManus\nLilli\nMicah\nLiv\nRemi\nMaisey\nRoger\nMarwa\nTheodor\nMeadow\nTiago\nMina\nTorin\nMira\nXander\nMiruna\nAlejandro\nOlivija\nAleksandr\nOonagh\nAmos\nPoppie\nBlaise\nRaya\nCaine\nRemy\nDante\nRena\nElvis\nRiadh\nEunan\nRoxanne\nHarris\nShelby\nJakob\nSommer\nJamal\nTeodora\nJoris\nZoya\nAdomas\nNoa\nAj\nMeara\nArjun\nRomi\nArtem\nHarlee\nAsa\nEsmai\nAshley\nSaileog\nBowie\nSloane\nCasper\nCóra\nColton\nErín\nCuinn\nJúlia\nDenas\nLilith\nDomas\nLylah\nDouglas\nReya\nFletcher\nRíadh\nFranek\nRua\nJensen\nSeána\nKorey\nShóna\nLucian\nLíle\nMalcolm\nSiana\nMatej\nMealla\nNeitas\nSia\nNolan\nRylie\nRex\nPeigí\nRylan\nMollaí\nRylee\nLucía\nSafwan\nSeóna\nSebastien\nAylah\nSteve\nAlys\nTeo\nCíara\nTobiasz\nCéala\nUmar\nDamaris\nAntony\nBlossom\nArnold\nFéile\nAugustas\nAadhya\nAyman\nÉila\nCezary\nÉire\nConnie\nSinead\nDarby\nGemma\nDhruv\nAbi\nDominiks\nKeelin\nDonald\nKellie\nFinbar\nCliona\nIsac\nTegan\nIsrael\nKaren\nJozef\nSharon\nKaelan\nKiera\nKenzo\nAlesha\nKodi\nShania\nLleyton\nDeirdre\nMarius\nJoanne\nMatheus\nKasey\nMihai\nToni\nMiracle\nDominika\nQuentin\nOrlagh\nReginald\nCaoilfhionn\nReid\nKayley\nRoland\nKerrie\nSameer\nNoelle\nSidney\nValerie\nTimotei\nGenevieve\nUsman\nJulianne\nYassin\nNoemi\nAmmar\nZarah\nArcher\nBernadette\nAxl\nMeg\nBreffni\nPrincess\nArham\nTamara\nKobe\nTeegan\nRob\nAgata\nSawyer\nBrigid\nAffan\nDenise\nJad\nKaitlin\nJudah\nMary Kate\nKason\nRhiannon\nZiggy\nRita\nBryson\nSylvia\nCade\nTeigan\nCillían\nTheresa\nConán\nAela\nÉamonn\nAleena\nReyansh\nElsa\nRí\nMarina\nRíain\nMichalina\nRohaan\nTiana\nYounis\nCelina\nLlewyn\nDestiny\nMalek\nElaina\nSéadhna\nHaley\nSeb\nIman\nReign\nIsolde\nReon\nOlwyn\nKnox\nRebeka\nVincenzo\nSamira\nRián\nSefora\nMagnus\nTabitha\nRíoghan\nAilis\nRonán\nAlissa\nKlayton\nAstrid\nMikaeel\nBebhinn\nSamy\nCaela\nAlonzo\nCecelia\nCónán\nEkaterina\nDaimhín\nEunice\nEvaan\nEvanna\nFeidhelm\nFrances\nFéilim\nIzzy\nBeckett\nKallie\nBríon\nLuiza\nAfonso\nMallaidh\nForrest\nMatylda\nEliezer\nAdina\nDómhnall\nAmaia\nJem\nAmelija\nCasian\nArisha
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/vet-clinic/files/givenname.txt	(revision 8fcd5dbca6ef6613ceb3bee0107d8b181fb1d358)
++++ out/production/vet-clinic/files/givenname.txt	(date 1589807719874)
+@@ -7,7 +7,7 @@
+ Emma
+ Conor
+ Sophie
+-Seán
++Sean
+ Amelia
+ Adam
+ Ella
+@@ -42,7 +42,7 @@
+ Lucy
+ Harry
+ Emma
+-Oisín
++Oisin
+ Lily
+ Michael
+ Olivia
+@@ -58,11 +58,9 @@
+ Anna
+ Patrick
+ Sophia
+-Rían
+ Holly
+ Finn
+ Freya
+-Seán
+ Saoirse
+ Oliver
+ Kate
+@@ -77,7 +75,6 @@
+ Bobby
+ Evie
+ John
+-Éabha
+ Leo
+ Cara
+ Cian
+@@ -97,7 +94,6 @@
+ Jacob
+ Erin
+ Alfie
+-Róisín
+ David
+ Zoe
+ Senan
+@@ -155,7 +151,6 @@
+ Andrew
+ Harper
+ Louis
+-Aoibhín
+ Danny
+ Emilia
+ Rory
+@@ -191,8 +186,6 @@
+ Dara
+ Ellen
+ Kyle
+-Méabh
+-Ruairí
+ Alexandra
+ Edward
+ Kayla
+@@ -203,7 +196,6 @@
+ Odhran
+ Mary
+ Eli
+-Áine
+ Mark
+ Aisling
+ Anthony
+@@ -214,7 +206,6 @@
+ Tara
+ Joey
+ Evelyn
+-Odhrán
+ Megan
+ Kevin
+ Doireann
+@@ -226,7 +217,6 @@
+ Lara
+ Sonny
+ Mollie
+-Tomás
+ Maeve
+ Cormac
+ Sara
+@@ -243,16 +233,13 @@
+ Killian
+ Poppy
+ Tiernan
+-Fíadh
+ Sebastian
+ Zoey
+ Carter
+ Penny
+ Hunter
+ Pippa
+-Daithí
+ Ayla
+-Ciarán
+ Ayda
+ Rian
+ Nina
+@@ -270,7 +257,6 @@
+ Paige
+ Cody
+ Lola
+-Éanna
+ Naoise
+ Lorcan
+ Cora
+@@ -305,10 +291,6 @@
+ Harvey
+ Jane
+ Cole
+-Síofra
+-Páidí
+-Siún
+-Séan
+ Brooke
+ Reuben
+ Mya
+@@ -327,7 +309,6 @@
+ Riley
+ Darcie
+ Iarla
+-Esmé
+ Lewis
+ Madison
+ Jordan
+@@ -345,7 +326,6 @@
+ Rowan
+ Tessa
+ Daire
+-Croía
+ Gerard
+ Aoibhinn
+ Keelan
+@@ -375,7 +355,6 @@
+ Levi
+ Esme
+ Bradley
+-Ríona
+ Fiachra
+ Zuzanna
+ Conn
+@@ -387,16 +366,11 @@
+ Kacper
+ Aurora
+ Milo
+-Éala
+-Dáire
+-Róise
+-Dáithí
+ Kayleigh
+ Robbie
+ Cassie
+ Olly
+ Elena
+-Caolán
+ Anastasia
+ Owen
+ Nevaeh
+@@ -430,7 +404,6 @@
+ Vanessa
+ Grayson
+ Alana
+-Séamus
+ Natalia
+ Dean
+ Rhea
+@@ -442,7 +415,6 @@
+ Alicja
+ Pádraig
+ Nancy
+-Ruadhán
+ Mae
+ Colm
+ Arabella
+@@ -462,9 +434,7 @@
+ Taylor
+ Matteo
+ Alisha
+-Aodhán
+ Catherine
+-Gearóid
+ Casey
+ Reece
+ Nessa
+@@ -479,7 +449,6 @@
+ Noel
+ Tilly
+ Conan
+-Bláithín
+ Rocco
+ Lydia
+ Aleksander
+@@ -502,7 +471,6 @@
+ Beatrice
+ Kaiden
+ Cadhla
+-Fíonn
+ Fia
+ Ross
+ Edie
+@@ -535,7 +503,6 @@
+ Connor
+ Frankie
+ Dominik
+-Gráinne
+ Austin
+ Alex
+ Caelan
+@@ -546,18 +513,13 @@
+ Kyra
+ Hudson
+ Ana
+-Cían
+-Lana
+-Mícheál
+ Lillie
+-Tiarnán
+ Norah
+ Calum
+ Belle
+ Lee
+ Quinn
+ Tristan
+-Éadaoin
+ Marcus
+ Orlaith
+ Donal
+@@ -583,7 +545,6 @@
+ Elias
+ Skylar
+ Lachlan
+-Aoibhínn
+ Ezra
+ Abby
+ Gavin
+@@ -603,11 +564,7 @@
+ Ibrahim
+ Piper
+ Tobias
+-Bláthnaid
+-Faolán
+-Clíodhna
+ Brandon
+-Úna
+ Darren
+ Eabha
+ Simon
+@@ -634,14 +591,10 @@
+ Emmie
+ Jace
+ Kaia
+-Cuán
+ Nela
+-Eóin
+ Skyler
+-Micheál
+-Roisín
++Sinead
+ Oisin
+-Sinéad
+ Justin
+ Danielle
+ Brooklyn
+@@ -665,7 +618,6 @@
+ Maxim
+ Margot
+ Jim
+-Síomha
+ Roman
+ Moya
+ Ahmad
+@@ -716,9 +668,7 @@
+ Joanna
+ Otis
+ Ally
+-Eóghan
+ Annabel
+-Sé
+ Cleo
+ Dawid
+ Eloise
+@@ -739,7 +689,6 @@
+ Malachy
+ Maci
+ Caden
+-Croíadh
+ Rafael
+ Heather
+ Ellis
+@@ -754,7 +703,6 @@
+ Bethany
+ Reggie
+ Joy
+-Shéa
+ Sadbh
+ Tomas
+ Meghan
+@@ -805,20 +753,14 @@
+ Nico
+ Stevie
+ Zion
+-Seoidín
+ Ignacy
+ Shannon
+ Ruadh
+ Jodie
+ Gael
+ Kelly
+-Cúan
+-Wiktoria
+-Dónal
+ Jenna
+-Seán Óg
+ Ashley
+-Séimí
+ Karolina
+ Padraig
+ Sasha
+@@ -884,14 +826,6 @@
+ Sandra
+ Albie
+ Serena
+-Caoimhín
+-Veronica
+-Kyren
+-Eileen
+-Lorcán
+-Johanna
+-Ódhran
+-Lauryn
+ Micheal
+ Madeleine
+ Tiarnan
+@@ -927,9 +861,7 @@
+ Milan
+ Vada
+ Rio
+-Eibhlín
+ Wyatt
+-Esmée
+ Emmett
+ Tori
+ Freddy
+@@ -944,9 +876,7 @@
+ Lea
+ Teodor
+ Una
+-Óisín
+ Neasa
+-Senán
+ Demi
+ Steven
+ Karina
+@@ -1005,33 +935,22 @@
+ Lochlainn
+ Blake
+ Lucca
+-June
+ Braxton
+ Philippa
+ Arijus
+-Caitlín
+ Karson
+-Órlaith
+ Rayyan
+-Réiltín
+ Avery
+-Zoë
+ Kayson
+-Síne
+-Croí
+ Alaia
+-Fionán
+ Abbey
+-Pádraic
+ Emer
+-Séadna
+-Patricia
++adna
+ Ace
+ Charley
+ Ciaran
+ Ailish
+ Ruairi
+-Paulina
+ Marc
+ Alexa
+ Riain
+@@ -1115,9 +1034,7 @@
+ Iosua
+ Wynter
+ John-Paul
+-Chloé
+ Marley
+-Mairéad
+ Seamie
+ Nicola
+ Vlad
+@@ -1129,16 +1046,10 @@
+ Olivers
+ Sabrina
+ Lugh
+-Laila
+-Mj
+ Charlie
+-Fionnán
+ Melanie
+-Maitiú
+ Caitlyn
+-Ólan
+ Klaudia
+-Ultán
+ Deborah
+ Seanán
+ Angela
+@@ -1197,7 +1108,6 @@
+ Byron
+ Amaya
+ Cal
+-Ella-Rose
+ Dominick
+ Indi
+ Dominykas
+@@ -1233,31 +1143,10 @@
+ Timmy
+ Winter
+ Alistair
+-Aibhín
+ Erick
+-Béibhinn
+-Abraham
+-Bríd
+-Bobbie
+-Cáit
+-Bruce
+-Éirinn
+-Coby
+-Íde
+-Davi
+-Máire
+-Dorian
+-Nainsí
+-Evanas
+-Nóra
+-Haris
+-Órla
+ Hughie
+-Réaltín
+ Macdara
+-Sibéal
+ Miley
+-Érin
+ Moise
+ Shona
+ Nikolas
+@@ -1302,9 +1191,7 @@
+ Kimberly
+ Kit
+ Vanesa
+-Páraic
+ Alexia
+-Rónán
+ Milly
+ Jax
+ Aoileann
+@@ -1387,7 +1274,6 @@
+ Dexter
+ Yasmina
+ Ezekiel
+-Bella-Rose
+ Franklin
+ Brooklyn
+ Aarav
+@@ -1400,13 +1286,11 @@
+ Gia
+ Layton
+ Ioana
+-Rodrigo
+ Lukne
+ Rogan
+ Marianna
+ Sonnie
+ Myra
+-Tommy Lee
+ Nel
+ Tommy-Lee
+ Raina
+@@ -1432,20 +1316,16 @@
+ Aodhla
+ Ishaan
+ Essie
+-Jj
+-Aimée
+ Jonathon
+ Ariyah
+ Kevins
+ Ayat
+ Lughaidh
+-Clíona
+ Mathias
+ Evelin
+ Mohamad
+ Mirha
+ Santiago
+-Renée
+ Setanta
+ Fiádh
+ Timur
+@@ -1490,31 +1370,22 @@
+ Antonina
+ Advik
+ Katy
+-Aodán
+ Fionnuala
+ Azaan
+ Jana
+ Bernardo
+ Jess
+-Bradán
+ Katrina
+-Cadán
+ Philomena
+ Clay
+ Estera
+-Óran
+ Iga
+-Rónan
+ Joyce
+-Ruán
+ Julianna
+-Seánie
+ Kimberley
+ Sunny
+ Larissa
+-Théo
+ Patricija
+-Ruaidhrí
+ Sofie
+ Lawson
+ Yusra
+@@ -1524,15 +1395,10 @@
+ Carmen
+ Yazan
+ Carolina
+-Orán
+ Emmanuella
+-Pádhraic
+ Honor
+-T J
+ Lainey
+-Teidí
+ Alexis
+-Cúán
+ Audrey
+ Denny
+ Bria
+@@ -1542,7 +1408,6 @@
+ Emile
+ Boston
+ Hailie
+-Brín
+ Honey
+ Glen
+ Lidia
+@@ -1701,11 +1566,9 @@
+ Bowie
+ Sloane
+ Casper
+-Córa
+ Colton
+ Erín
+ Cuinn
+-Júlia
+ Denas
+ Lilith
+ Domas
+@@ -1713,15 +1576,11 @@
+ Douglas
+ Reya
+ Fletcher
+-Ríadh
+ Franek
+ Rua
+ Jensen
+-Seána
+ Korey
+-Shóna
+ Lucian
+-Líle
+ Malcolm
+ Siana
+ Matej
+@@ -1731,33 +1590,23 @@
+ Nolan
+ Rylie
+ Rex
+-Peigí
+ Rylan
+-Mollaí
+ Rylee
+-Lucía
+ Safwan
+-Seóna
+ Sebastien
+ Aylah
+ Steve
+ Alys
+ Teo
+-Cíara
+-Tobiasz
+-Céala
+ Umar
+ Damaris
+ Antony
+ Blossom
+ Arnold
+-Féile
+ Augustas
+ Aadhya
+ Ayman
+-Éila
+ Cezary
+-Éire
+ Connie
+ Sinead
+ Darby
+@@ -1842,15 +1691,11 @@
+ Teigan
+ Cillían
+ Theresa
+-Conán
+ Aela
+-Éamonn
+ Aleena
+ Reyansh
+ Elsa
+-Rí
+ Marina
+-Ríain
+ Michalina
+ Rohaan
+ Tiana
+@@ -1860,7 +1705,7 @@
+ Destiny
+ Malek
+ Elaina
+-Séadhna
++adhna
+ Haley
+ Seb
+ Iman
+@@ -1872,13 +1717,10 @@
+ Rebeka
+ Vincenzo
+ Samira
+-Rián
+ Sefora
+ Magnus
+ Tabitha
+-Ríoghan
+ Ailis
+-Ronán
+ Alissa
+ Klayton
+ Astrid
+@@ -1888,19 +1730,15 @@
+ Caela
+ Alonzo
+ Cecelia
+-Cónán
+ Ekaterina
+-Daimhín
+ Eunice
+ Evaan
+ Evanna
+ Feidhelm
+ Frances
+-Féilim
+ Izzy
+ Beckett
+ Kallie
+-Bríon
+ Luiza
+ Afonso
+ Mallaidh
+@@ -1908,7 +1746,6 @@
+ Matylda
+ Eliezer
+ Adina
+-Dómhnall
+ Amaia
+ Jem
+ Amelija
+Index: out/production/vet-clinic/files/animalname.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>Bella\nCoco\nMax\nBuddy\nDaisy\nLola\nAngel\nLuna\nLucy\nHarley\nCharlie\nPepper\nShadow\nGracie\nJack\nMilo\nRocky\nSadie\nStella\nNala\nOliver\nPenny\nRuby\nChloe\nCleo\nDuke\nGinger\nMolly\nSophie\nBaby\nBear\nBailey\nMaggie\nMarley\nOscar\nPeanut\nLucky\nAbby\nCooper\nDexter\nLoki\nOreo\nSammy\nTucker\nBelle\nLeo\nLouie\nRomeo\nSam\nSasha\nBandit\nEmma\nFinn\nJake\nJasper\nKiwi\nMia\nScout\nSunny\nTeddy\nToby\nWillow\nAriel\nAthena\nBruce\nDakota\nDiesel\nGizmo\nHoney\nJax\nLady\nMinnie\nMurphy\nPiper\nRosie\nSimba\nSpike\nSunshine\nZeus\nZiggy\nAce\nApollo\nBuster\nCookie\nFrankie\nGeorge\nHenry\nIzzy\nJackson\nLulu\nRiley\nThor\nZoe / Zoey\nBarney\nBentley\nBruno\nDixie\nHank\nHazel\nJade
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- out/production/vet-clinic/files/animalname.txt	(revision 8fcd5dbca6ef6613ceb3bee0107d8b181fb1d358)
++++ out/production/vet-clinic/files/animalname.txt	(date 1589807719870)
+@@ -1,3 +1,11 @@
++toto
++pikachu
++puka
++suka
++matti
++mcqueen
++dory
++nemo
+ Bella
+ Coco
+ Max
+@@ -90,11 +98,15 @@
+ Lulu
+ Riley
+ Thor
+-Zoe / Zoey
++Zoey
+ Barney
+ Bentley
+ Bruno
+ Dixie
+ Hank
+ Hazel
+-Jade
+\ No newline at end of file
++Jade
++juju
++Mel
++Skiper
++Sushi
+\ No newline at end of file
+Index: src/VetClinic.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import classes.*;\nimport conf.SingletonLoadStaff;\nimport models.Nurse;\nimport models.Surgeon;\nimport models.Veterinary;\nimport conf.SingletonLoadAnimals;\nimport utils.ToScreen;\n\nimport java.util.ArrayList;\n\npublic class VetClinic {\n\n    private ArrayList<Veterinary> vetList;\n    private ArrayList<Surgeon> surgeonList;\n    private ArrayList<Nurse> nurseList;\n    private SingletonLoadStaff staffs;\n    private SingletonLoadAnimals animals;\n\n    public static void main(String[] args) {\n        new VetClinic();\n    }\n\n    public VetClinic(){\n        this.staffs = SingletonLoadStaff.getInstance();\n        this.vetList     = this.staffs.getVetList();\n        this.surgeonList = this.staffs.getSurgeonList();\n        this.nurseList   = this.staffs.getNurseList();\n\n        ToScreen.showStaffAll();\n        \n        this.animals = SingletonLoadAnimals.getInstance();\n        \n        ToScreen.showAnimalAll();\n    }\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/VetClinic.java	(revision 8fcd5dbca6ef6613ceb3bee0107d8b181fb1d358)
++++ src/VetClinic.java	(date 1589939511979)
+@@ -4,9 +4,11 @@
+ import models.Surgeon;
+ import models.Veterinary;
+ import conf.SingletonLoadAnimals;
++import utils.AnimalSearch;
+ import utils.ToScreen;
+ 
+ import java.util.ArrayList;
++import java.util.Arrays;
+ 
+ public class VetClinic {
+ 
+@@ -26,11 +28,34 @@
+         this.surgeonList = this.staffs.getSurgeonList();
+         this.nurseList   = this.staffs.getNurseList();
+ 
+-        ToScreen.showStaffAll();
++        //ToScreen.showStaffAll();
+         
+         this.animals = SingletonLoadAnimals.getInstance();
+         
+-        ToScreen.showAnimalAll();
++        //ToScreen.showAnimalAll();
++
++        /** Pesquisa pelo nome Tucker na lista de Dogs */
++        //searchAnimal(this.animals.getDogList(), "Tucker");
++
++        /** Pesquisa pelo nome Tucker na lista geral de animais */
++        searchAnimal(this.animals.getAllAnimals(), "Tucker");
++
++        // mostra todos os animais. Migrar essa solucao para a classe ToScreen.
++        /**
++        ArrayList<Animals> allAnimals = this.animals.getAllAnimals();
++        for (int i = 0; i < allAnimals.size(); i++) {
++            System.out.println(i+" - ID: "+allAnimals.get(i).getAnimal_id()+" - Animal: "+allAnimals.get(i).getClass().getSimpleName()+" - "+allAnimals.get(i).getFullInformation());
++        }
++         */
++    }
++
++    public void searchAnimal(ArrayList<Animals> arrayList, String name){
++        ArrayList<Animals> searchResult = AnimalSearch.binary(arrayList, name);
++        System.out.println("-------------------------------------------------------");
++        System.out.println("Result: ");
++        for (int i = 0; i < searchResult.size(); i++) {
++            System.out.println("ID: "+searchResult.get(i).getAnimal_id()+" - Animal: "+searchResult.get(i).getClass().getSimpleName()+" - "+searchResult.get(i).getFullInformation());
++        }
+     }
+ 
+ }
+Index: src/conf/SingletonLoadAnimals.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package conf;\n\nimport classes.Animals;\nimport helpers.HelperAnimals;\nimport models.Bird;\nimport models.Cat;\nimport models.Dog;\nimport models.Rabbit;\nimport models.Hamster;\n\nimport java.util.ArrayList;\nimport java.util.Random;\n\n public class SingletonLoadAnimals {\n\n\tprivate int maxAnimal = 1000;\n\tprivate int animal_id = 0;\n\tprivate int age = 0;\n\tprivate String nameRandom, illnessRandom;\n\tprivate ArrayList<Dog> dogList = new ArrayList<Dog>();\n\tprivate ArrayList<Cat> catList = new ArrayList<Cat>();\n\tprivate ArrayList<Bird> birdList = new ArrayList<Bird>();\n\tprivate ArrayList<Rabbit> rabbitList = new ArrayList<Rabbit>();\n\tprivate ArrayList<Hamster> hamsterList = new ArrayList<Hamster>();\n\tprivate ArrayList<String> animalnameList;\n\tprivate ArrayList<String> animalillnessList;\n\tprivate Random rd = new Random();\n\tprivate int idnameRandom, idillnessRandom, animalnameListSize, animalillnessListSize;\n\t\n\tprivate static SingletonLoadAnimals instance = null;\n\t\n\tprivate SingletonLoadAnimals () {\n\t\tthis.animalnameList = HelperAnimals.loadAnimalname();\n\t\tthis.animalillnessList = HelperAnimals.loadAnimalillness();\n\t\tif(!this.animalnameList.isEmpty() && !this.animalillnessList.isEmpty()) {\n\t\t\tthis.animalnameListSize = this.animalnameList.size();\n\t\t\tthis.animalillnessListSize = this.animalillnessList.size();\n\t\t\tthis.createAnimalList();\n\t\t\t\n\t\t\t\n\t\t}\n\t\t\n\t}\n\t\n\tpublic static SingletonLoadAnimals getInstance() {\n\t\t\n\t\tif (instance == null) {\n\t\t\t\n\t\t\tinstance = new SingletonLoadAnimals();\n\t\t}\n\t\treturn instance;\n\t}\n\t\n\t\n\tprivate void createAnimalList(){\n\t\tint randomAnimalType;\n\t\t\tSystem.out.println(\"Creating Animal list.\");\n\t\tfor (int i = 0; i < this.maxAnimal; i++) {\n\t\t\trandomAnimalType = rd.nextInt(5);\n\t\t\tidnameRandom = rd.nextInt(this.animalnameListSize);\n\t\t\tidillnessRandom = rd.nextInt(this.animalillnessListSize);\n\t\t\tnameRandom = animalnameList.get(idnameRandom);\n\t\t\tillnessRandom = animalillnessList.get(idillnessRandom);\n\t\t\t\n\t\t\tswitch (randomAnimalType){\n\t\t\t\tcase 0 : dogList.add(new Dog (this.incrementAnimal_id(), nameRandom, age,  illnessRandom));\n\t\t\t\t\tbreak;\n\t\t\t\tcase 1 : catList.add(new Cat(this.incrementAnimal_id(), nameRandom, age,  illnessRandom));\n\t\t\t\t\tbreak;\n\t\t\t\tcase 2 : birdList.add(new Bird(this.incrementAnimal_id(), nameRandom, age,  illnessRandom));\n\t\t\t\t\tbreak;\n\t\t\t\tcase 3 : hamsterList.add(new Hamster(this.incrementAnimal_id(), nameRandom, age, illnessRandom));\n\t\t\t\t\tbreak;\n\t\t\t\tdefault : rabbitList.add(new Rabbit(this.incrementAnimal_id(), nameRandom, age, illnessRandom));\t\n\t\t\t}\n\t\t}\n\t\t\t\n\t}\n\t\t\t\n\tprivate int incrementAnimal_id() {\n\t\t\n\t\tthis.animal_id++;\n\t\treturn this.animal_id;\n\t}\n\t\n\n\tpublic ArrayList<Dog> getDogList() {\n\t\treturn dogList;\n\t}\n\n\tpublic ArrayList<Cat> getCatList() {\n\t\treturn catList;\n\t}\n\n\tpublic ArrayList<Bird> getBirdList() {\n\t\treturn birdList;\n\t}\n\t\n\tpublic ArrayList<Hamster> getHamsterList() {\n\t\treturn hamsterList;\n\t}\n\t\n\tpublic ArrayList<Rabbit> getRabbitList() {\n\t\treturn rabbitList;\n\t}\n\t\n\t\n\tpublic void close() {\n\t\t\n\t\tthis.instance = null;\n\t}\n\t\n\t\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/conf/SingletonLoadAnimals.java	(revision 8fcd5dbca6ef6613ceb3bee0107d8b181fb1d358)
++++ src/conf/SingletonLoadAnimals.java	(date 1589940501890)
+@@ -17,11 +17,12 @@
+ 	private int animal_id = 0;
+ 	private int age = 0;
+ 	private String nameRandom, illnessRandom;
+-	private ArrayList<Dog> dogList = new ArrayList<Dog>();
+-	private ArrayList<Cat> catList = new ArrayList<Cat>();
+-	private ArrayList<Bird> birdList = new ArrayList<Bird>();
+-	private ArrayList<Rabbit> rabbitList = new ArrayList<Rabbit>();
+-	private ArrayList<Hamster> hamsterList = new ArrayList<Hamster>();
++	// Alterei as listas para Tipo Animals
++	private ArrayList<Animals> dogList = new ArrayList<>();
++	private ArrayList<Animals> catList = new ArrayList<>();
++	private ArrayList<Animals> birdList = new ArrayList<>();
++	private ArrayList<Animals> rabbitList = new ArrayList<>();
++	private ArrayList<Animals> hamsterList = new ArrayList<>();
+ 	private ArrayList<String> animalnameList;
+ 	private ArrayList<String> animalillnessList;
+ 	private Random rd = new Random();
+@@ -83,27 +84,38 @@
+ 		return this.animal_id;
+ 	}
+ 	
+-
+-	public ArrayList<Dog> getDogList() {
++	//Alterei o retorno dos metodos abaixo para retorna lista de Animals ao inves de um animal especifico
++	public ArrayList<Animals> getDogList() {
+ 		return dogList;
+ 	}
+ 
+-	public ArrayList<Cat> getCatList() {
++	public ArrayList<Animals> getCatList() {
+ 		return catList;
+ 	}
+ 
+-	public ArrayList<Bird> getBirdList() {
++	public ArrayList<Animals> getBirdList() {
+ 		return birdList;
+ 	}
+ 	
+-	public ArrayList<Hamster> getHamsterList() {
++	public ArrayList<Animals> getHamsterList() {
+ 		return hamsterList;
+ 	}
+ 	
+-	public ArrayList<Rabbit> getRabbitList() {
++	public ArrayList<Animals> getRabbitList() {
+ 		return rabbitList;
+ 	}
+-	
++
++	//Criei esse metodo para unir todas as listas e retornar em um so
++	public ArrayList<Animals> getAllAnimals(){
++		ArrayList<Animals> allAnimals = new ArrayList<>();
++		allAnimals.addAll(this.getDogList());
++		allAnimals.addAll(this.getCatList());
++		allAnimals.addAll(this.getBirdList());
++		allAnimals.addAll(this.getHamsterList());
++		allAnimals.addAll(this.getRabbitList());
++
++		return allAnimals;
++	}
+ 	
+ 	public void close() {
+ 		
