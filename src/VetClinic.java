@@ -27,18 +27,21 @@ public class VetClinic {
         this.vetList     = this.staffs.getVetList();
         this.surgeonList = this.staffs.getSurgeonList();
         this.nurseList   = this.staffs.getNurseList();
-
-        ToScreen.showStaffAll();
         
         this.animals = SingletonLoadAnimals.getInstance();
-;
 
-       ToScreen.showAnimalAll();
+        //ToScreen.showStaffAll();
+        //ToScreen.showAnimalAll();
+
+        //List animals by various types (e.g. list all dogs) true for table false to data on line
+        //ToScreen.listAnimal(this.animals.getDogList(), true);
+        //or all animals
+        ToScreen.listAnimal(this.animals.getAllAnimals(), true);
+
 
         // Search for a desired name in a list of one type of animal
-      searchAnimal(this.animals.getDogList(), "Jax");
+        //searchAnimal(this.animals.getDogList(), "Jax");
 
-        
         //Search for a specific name on the Animal list. It will bring all type of animals with the desired name.
         //searchAnimal(this.animals.getAllAnimals(), "toto");
     }
