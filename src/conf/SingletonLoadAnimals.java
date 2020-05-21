@@ -53,7 +53,7 @@ import java.util.Random;
 	
 	private void createAnimalList(){
 		int randomAnimalType;
-			System.out.println("Creating Animal list.");
+			//System.out.println("Creating Animal list.");
 		for (int i = 0; i < this.maxAnimal; i++) {
 			randomAnimalType = rd.nextInt(5);
 			idnameRandom = rd.nextInt(this.animalnameListSize);

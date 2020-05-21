@@ -17,7 +17,7 @@ public class HelperMedStaff {
         givenname = new ArrayList<String>();
         String line;
 
-        System.out.println("Reading file given names...");
+        //System.out.println("Reading file given names...");
         try {
             reader = new BufferedReader( new FileReader(FilesImport.GIVENNAME.getDirectory()));
             while ((line = reader.readLine()) != null) {
@@ -29,7 +29,7 @@ public class HelperMedStaff {
         } catch (IOException e) {
             System.out.println("File import has failed. Error: "+e.getMessage());
         }
-        System.out.println("Done!");
+        //System.out.println("Done!");
         return givenname;
     }
 
@@ -37,7 +37,7 @@ public class HelperMedStaff {
         ArrayList<String> surname;
         surname = new ArrayList<String>();
         String line;
-        System.out.println("Reading file surnames...");
+        //System.out.println("Reading file surnames...");
         try {
             reader = new BufferedReader( new FileReader(FilesImport.SURNAME.getDirectory()));
             while ((line = reader.readLine()) != null) {
@@ -49,7 +49,7 @@ public class HelperMedStaff {
         } catch (IOException e) {
             System.out.println("File import has failed. Error: "+e.getMessage());
         }
-        System.out.println("Done!");
+        //System.out.println("Done!");
         return surname;
     }
     
@@ -57,7 +57,7 @@ public class HelperMedStaff {
     	ArrayList<String> itTask;
     	itTask = new ArrayList<>();
     	String line;
-        System.out.println("Reading file task_it...");
+        //System.out.println("Reading file task_it...");
         try {
             reader = new BufferedReader( new FileReader(FilesImport.TASKIT.getDirectory()));
             while ((line = reader.readLine()) != null) {
@@ -69,7 +69,7 @@ public class HelperMedStaff {
         } catch (IOException e) {
             System.out.println("File import has failed. Error: "+e.getMessage());
         }
-        System.out.println("Done!");
+        //System.out.println("Done!");
         return itTask;
     }
     
@@ -77,7 +77,7 @@ public class HelperMedStaff {
     	ArrayList<String> accountantTask;
     	accountantTask = new ArrayList<String>();
     	String line;
-        System.out.println("Reading file task_accountant...");
+        //System.out.println("Reading file task_accountant...");
         try {
             reader = new BufferedReader( new FileReader(FilesImport.TASKACCOUNTANT.getDirectory()));
             while ((line = reader.readLine()) != null) {
@@ -89,7 +89,7 @@ public class HelperMedStaff {
         } catch (IOException e) {
             System.out.println("File import has failed. Error: "+e.getMessage());
         }
-        System.out.println("Done!");
+        //System.out.println("Done!");
         return accountantTask;
     }
     
@@ -97,7 +97,7 @@ public class HelperMedStaff {
     	ArrayList<String> secretaryTask;
     	secretaryTask = new ArrayList<String>();
     	String line;
-        System.out.println("Reading file task_secretary...");
+        //System.out.println("Reading file task_secretary...");
         try {
             reader = new BufferedReader( new FileReader(FilesImport.TASKSECRETARY.getDirectory()));
             while ((line = reader.readLine()) != null) {
@@ -109,7 +109,7 @@ public class HelperMedStaff {
         } catch (IOException e) {
             System.out.println("File import has failed. Error: "+e.getMessage());
         }
-        System.out.println("Done!");
+        //System.out.println("Done!");
         return secretaryTask;
     }
     

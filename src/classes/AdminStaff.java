@@ -24,7 +24,7 @@ abstract public class AdminStaff extends Employee {
 		
 		 
 		if(this.name != null && this.surname != null && this.salaryLevel != 0){
-            return this.name +' '+ this.surname +" salary level: "+ salaryLevel + "is currently: " + this.getTask();
+            return this.name +' '+ this.surname;
         } else if(this.name != null){
             return this.name;
         } else if(this.surname != null){

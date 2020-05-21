@@ -195,4 +195,8 @@ abstract public class Employee {
             return yearsWorking;
         }
     }
+
+    public String toString(){
+	    return "ID: " + this.emp_id +" - Full name: "+ this.getFullName() + " - Category: " + this.getClass().getSimpleName();
+    }
 }

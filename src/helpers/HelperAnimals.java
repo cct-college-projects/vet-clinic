@@ -16,7 +16,7 @@ public class HelperAnimals {
 		animalName = new ArrayList<String>();
 		String line;
 		
-		System.out.println("Reading animal name file");
+		//System.out.println("Reading animal name file");
 		try {
 			br = new BufferedReader(new FileReader (FilesImport.ANIMALNAME.getDirectory()));
 			while ((line = br.readLine()) !=null) {
@@ -29,7 +29,7 @@ public class HelperAnimals {
 			catch (IOException e) {
 				System.out.println("File import has failed. Error: " + e.getMessage());
 		}
-		System.out.println("Done.");	
+		//System.out.println("Done.");
 		return animalName;
 	}
 		
@@ -38,7 +38,7 @@ public class HelperAnimals {
 		animalIllness = new ArrayList<String>();
 		String line;
 		
-		System.out.println("Reading animal illness file");
+		//System.out.println("Reading animal illness file");
 		try {
 			br = new BufferedReader(new FileReader (FilesImport.ANIMALILLNESS.getDirectory()));
 			while ((line = br.readLine()) !=null) {
@@ -51,7 +51,7 @@ public class HelperAnimals {
 			catch (IOException e) {
 				System.out.println("File import has failed. Error: " + e.getMessage());
 		}
-		System.out.println("Done.");	
+		//System.out.println("Done.");
 		return animalIllness;
 	}
 	
