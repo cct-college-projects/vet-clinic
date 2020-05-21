@@ -44,16 +44,6 @@ public class BinarySearch {
         return new ArrayList<>();
     }
 
-    public static ArrayList<Employee> employee(ArrayList<Employee> arraylist, String target){
-        ArrayList<Employee> result = new ArrayList<>();
-        for (Employee employee: arraylist ) {
-            if(employee.getFullName().toLowerCase().contains(target.toLowerCase())){
-                result.add(employee);
-            }
-        }
-        return result;
-    }
-
     private static ArrayList<Animals> getAdjacentNamesAnimal(ArrayList<Animals> arrayList, int position){
         ArrayList<Animals> adjacentNames = new ArrayList<>();
         Boolean left = false, right = false;
