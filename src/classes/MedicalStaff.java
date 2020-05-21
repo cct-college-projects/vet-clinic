@@ -1,12 +1,13 @@
 package classes;
 
-public class MedicalStaff extends Employee {
+abstract public class MedicalStaff extends Employee {
 
 
     private String medicRegister;
     
-    public MedicalStaff(int id, String name, String surname) {
-    	super(id, name, surname);
+    public MedicalStaff(int id, String name, String surname, int salaryLevel) {
+    	super(id, name, surname, salaryLevel);
+    	this.setSalaryLevel(salaryLevel);
     }
 
    
@@ -20,6 +21,21 @@ public class MedicalStaff extends Employee {
         return (this.currentSalary * bonusPercentTotal) + this.currentSalary;
     }
 
+    @Override
+	public String getFullName() {
+				 
+		if(this.name != null && this.surname != null && this.salaryLevel != 0){
+            return this.name +' '+ this.surname + salaryLevel;
+        } else if(this.name != null){
+            return this.name;
+        } else if(this.surname != null){
+            return this.surname;
+        } else {
+            return "This employee doesn't have a name.";
+        }
+		
+	}
+    
     public String getMedicRegister() {
         return medicRegister;
     }
@@ -27,4 +43,9 @@ public class MedicalStaff extends Employee {
     public void setMedicRegister(String medicRegister) {
         this.medicRegister = medicRegister;
     }
+
+    //Each child class will have its own salaryLevel body, as the salary level is different according to the category
+    // salary level range is defined in each child class
+    
+	public abstract void salaryLevel();
 }

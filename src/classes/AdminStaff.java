@@ -2,10 +2,11 @@ package classes;
 
 
 
-public class AdminStaff extends Employee {
+abstract public class AdminStaff extends Employee {
 	
-	public AdminStaff (int id, String name, String surname, String task) {
-		super(id, name, surname, task);
+	public AdminStaff (int id, String name, String surname, int salaryLevel, String task) {
+		super(id, name, surname, salaryLevel, task);
+		this.setSalaryLevel(salaryLevel);
 	}
 		
 	//Bonus applied for adminStaff will be an amount of 12% per year over the current wages (currentSalaray)
@@ -20,8 +21,8 @@ public class AdminStaff extends Employee {
 	public String getFullName() {
 		
 		 
-		if(this.name != null && this.surname != null){
-            return this.name +' '+ this.surname +" is currently: " + this.getTask();
+		if(this.name != null && this.surname != null && this.salaryLevel != 0){
+            return this.name +' '+ this.surname +" salary level: "+ salaryLevel + "is currently: " + this.getTask();
         } else if(this.name != null){
             return this.name;
         } else if(this.surname != null){
@@ -31,5 +32,11 @@ public class AdminStaff extends Employee {
         }
 		
 	}
+
+    //Each child class will have its own salaryLevel body, as the salary level is different according to the category
+    // salary level range is defined in each child class
+	
+	public abstract void salaryLevel();
+		
 	
 }

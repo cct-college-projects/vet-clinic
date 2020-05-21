@@ -19,23 +19,28 @@ abstract public class Employee {
     protected String task;
         
 
-    public Employee(int id, String name, String surname){
+    public Employee(int id, String name, String surname, int salaryLevel){
 
     	this.setEmp_id(id);
         this.setName(name);
         this.setSurname(surname);
+        this.setSalaryLevel (salaryLevel);
     }
 
-    public Employee(int id, String name, String surname, String task){
+    public Employee(int id, String name, String surname,int salaryLevel, String task){
 
         this.setEmp_id(id);
         this.setName(name);
         this.setSurname(surname);
+        this.setSalaryLevel(salaryLevel);
         this.setTask(task);
     }
 
     public abstract double anualBonus();
-
+    
+    //Method to set the salary for the employees. Each type will hold its own body method with it is respect range of salary level
+    //This method will be inherited by AdminStaff and MedicalStaff and each class will pass the method to each child class too.
+    public abstract void salaryLevel();
   
 	public String getTask() {
 		return task;
@@ -142,19 +147,23 @@ abstract public class Employee {
     public void setSurname(String surname) {
         this.surname = surname;
     }
-
-    public String getFullName(){
-        if(this.name != null && this.surname != null){
-            return this.name+' '+surname;
-        } else if(this.name != null){
-            return this.name;
-        } else if(this.surname != null){
-            return this.surname;
-        } else {
-            return "This employee doesn't have a name.";
-        }
-    }
-
+    
+    
+    public abstract String getFullName();
+    
+//    public String getFullName(){
+//        if(this.name != null && this.surname != null && this.salaryLevel !=0){
+//            return this.name+' '+surname + salaryLevel;
+//        } else if(this.name != null){
+//            return this.name;
+//        } else if(this.surname != null){
+//            return this.surname;
+//        } 
+//        else {
+//            return "This employee doesn't have a name.";
+//        }
+//    }
+       
     public int getYearsWorking() {
         if(this.dateOfHire == null){
             return 0;
