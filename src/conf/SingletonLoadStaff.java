@@ -71,7 +71,7 @@ public class SingletonLoadStaff {
 
 	private void createMedicList(){
 		int randomMedicType;
-		System.out.println("Creating medics list.");
+		//System.out.println("Creating medics list.");
 		for (int i = 0; i < this.maxMedicEmployees; i++) {
 			randomMedicType = random.nextInt(3);
 			idNameRand = random.nextInt(this.givennameListSize);
@@ -91,7 +91,7 @@ public class SingletonLoadStaff {
 
 	private void createStaffList(){
 		int randomStaffType;
-		System.out.println("Creating staff list.");
+		//System.out.println("Creating staff list.");
 		do {
 			if(!accountantList.isEmpty() || !itSupportList.isEmpty() || !secretaryList.isEmpty()){
 				this.idEmp -= this.maxStaffEmployees;

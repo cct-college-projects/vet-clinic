@@ -1,6 +1,7 @@
 package utils;
 
 import classes.Animals;
+import classes.Employee;
 import conf.SingletonLoadStaff;
 import conf.SingletonLoadAnimals;
 import helpers.HelperStrings;
@@ -9,6 +10,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+
+import static helpers.HelperStrings.nChar;
+import static helpers.HelperStrings.nCharIntervals;
 
 public class ToScreen {
 	
@@ -58,6 +62,10 @@ public class ToScreen {
 		}while(choice != 8);
 			System.out.println("Exit.");
 	}
+
+	public static void showMainMenu(){
+	    Menu.main();
+    }
 	
     public static void showMessage(String msg){
         System.out.println(msg);
@@ -133,8 +141,31 @@ public class ToScreen {
             System.out.println("ID: "+searchResult.get(i).getAnimal_id()+" - Animal: "+searchResult.get(i).getClass().getSimpleName()+" - "+searchResult.get(i).getFullInformation());
         }
     }
-    
-    
+
+    public static void listEmployee(ArrayList<Employee> employee, Boolean table){
+
+        showMessage(nChar('-', 50));
+        showMessage("Result: "+employee.size()+" records.");
+
+        if(table){
+            int[] colsHeader = {7,23,50};
+            showMessage(nCharIntervals('-', ' ', colsHeader));
+            showMessage("ID\t\tCATEGORY\t\tFULL NAME\t\t");
+            showMessage(nCharIntervals('-', ' ', colsHeader));
+            for (Employee emp: employee) {
+                String fullName = "", category = "";
+
+                fullName = HelperStrings.addTabToString(emp.getFullName());
+                category = HelperStrings.addTabToString(emp.getClass().getSimpleName());
+
+                showMessage(emp.getEmp_id() + "\t\t" + category + "\t\t" + fullName + "\t\t");
+            }
+        } else {
+            for ( Employee emp: employee) {
+                showMessage(employee.toString());
+            }
+        }
+    }
     
     public int getUserOption () {
 		

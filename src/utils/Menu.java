@@ -11,25 +11,33 @@ import models.*;
 import classes.*;
 
 public class Menu {
-	
-	
-	public int getUserOption () {
+
+	public static void main(){
+		int option = getUserOptionMainMenu();
+		/** switch case option start below */
+	}
+
+	public static void listMainMenuOptions(){
+		System.out.println("\nWelcome to Vet Clinic Program. Please choose an option from the list below.\n");
+
+		System.out.println("1: List all staff.");
+		System.out.println("2: List staff by category.");
+		System.out.println("3: List admin Staff performing a task.");
+		System.out.println("4: Search for a specific member of staff by name.");
+		System.out.println("5: List all animals.");
+		System.out.println("6: List animals per type.");
+		System.out.println("7: Search for a specific animal by name.");
+		System.out.println("8: Exit");
+	}
+
+	public static int getUserOptionMainMenu () {
 		
 		BufferedReader myReader = new BufferedReader(new InputStreamReader(System.in));
 		
 		int input;
 		
 		do {
-			System.out.println("\nWelcome to Vet Clinic Program. Please choose an option from the list below.\n");
-			
-			System.out.println("1: List all staff.");
-			System.out.println("2: List staff by category.");
-			System.out.println("3: List admin Staff performing a task.");
-			System.out.println("4: Search for a specific member of staff by name.");
-			System.out.println("5: List all animals.");
-			System.out.println("6: List animals per type.");
-			System.out.println("7: Search for a specific animal by name.");
-			System.out.println("8: Exit");
+				listMainMenuOptions();
 			
 			try {
 				input = Integer.parseInt(myReader.readLine());

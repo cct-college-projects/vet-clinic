@@ -25,7 +25,7 @@ abstract public class MedicalStaff extends Employee {
 	public String getFullName() {
 				 
 		if(this.name != null && this.surname != null && this.salaryLevel != 0){
-            return this.name +' '+ this.surname + salaryLevel;
+            return this.name +' '+ this.surname;
         } else if(this.name != null){
             return this.name;
         } else if(this.surname != null){
