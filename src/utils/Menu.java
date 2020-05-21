@@ -11,33 +11,26 @@ import models.*;
 import classes.*;
 
 public class Menu {
+	
+	private SingletonLoadAnimals animals;
 
-	public static void main(){
-		int option = getUserOptionMainMenu();
-		/** switch case option start below */
-	}
-
-	public static void listMainMenuOptions(){
-		System.out.println("\nWelcome to Vet Clinic Program. Please choose an option from the list below.\n");
-
-		System.out.println("1: List all staff.");
-		System.out.println("2: List staff by category.");
-		System.out.println("3: List admin Staff performing a task.");
-		System.out.println("4: Search for a specific member of staff by name.");
-		System.out.println("5: List all animals.");
-		System.out.println("6: List animals per type.");
-		System.out.println("7: Search for a specific animal by name.");
-		System.out.println("8: Exit");
-	}
-
-	public static int getUserOptionMainMenu () {
+	public int getUserOption () {
 		
 		BufferedReader myReader = new BufferedReader(new InputStreamReader(System.in));
 		
 		int input;
 		
 		do {
-				listMainMenuOptions();
+			System.out.println("\nWelcome to Vet Clinic Program. Please choose an option from the list below.\n");
+			
+			System.out.println("1: List all staff.");
+			System.out.println("2: List staff by category.");
+			System.out.println("3: List admin Staff performing a task.");
+			System.out.println("4: Search for a specific member of staff by name.");
+			System.out.println("5: List all animals.");
+			System.out.println("6: List animals per type.");
+			System.out.println("7: Search for a specific animal by name.");
+			System.out.println("8: Exit");
 			
 			try {
 				input = Integer.parseInt(myReader.readLine());
@@ -59,4 +52,35 @@ public class Menu {
 		
 		
 	}
+	
+//	public fileWithMenu() {
+		
+//		int choice = 0;
+//		
+//		
+//		do {
+//			
+//			choice = getUserOption();
+//			
+//			if (choice == 1) {
+////				 this.staffs = SingletonLoadStaff.getInstance();
+////			        this.vetList     = this.staffs.getVetList();
+////			        this.surgeonList = this.staffs.getSurgeonList();
+////			        this.nurseList   = this.staffs.getNurseList();
+//
+//			        ToScreen.showStaffAll();
+//			}
+//			
+//			else if (choice == 4) {
+//			
+//			this.animals = SingletonLoadAnimals.getInstance();
+//		        
+//		        ToScreen.showAnimalAll();
+//				
+//			}
+//			
+//		}while (choice != 9);
+//		
+//	}
+//
 }
