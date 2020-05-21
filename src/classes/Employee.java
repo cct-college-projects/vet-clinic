@@ -19,29 +19,28 @@ abstract public class Employee {
     protected String task;
         
 
-    public Employee(int id, String name, String surname, int salaryLevel){
+    public Employee(int id, String name, String surname, double currentSalary, int salaryLevel){
 
     	this.setEmp_id(id);
         this.setName(name);
         this.setSurname(surname);
-        this.setSalaryLevel (salaryLevel);
+        this.setCurrentSalary();
+        this.setSalaryLevel();
+        
     }
 
-    public Employee(int id, String name, String surname,int salaryLevel, String task){
+    public Employee(int id, String name, String surname,double currentSalary, int salaryLevel, String task){
 
         this.setEmp_id(id);
         this.setName(name);
         this.setSurname(surname);
-        this.setSalaryLevel(salaryLevel);
         this.setTask(task);
     }
 
     public abstract double anualBonus();
     
-    //Method to set the salary for the employees. Each type will hold its own body method with it is respect range of salary level
-    //This method will be inherited by AdminStaff and MedicalStaff and each class will pass the method to each child class too.
-    public abstract void salaryLevel();
-  
+    
+      
 	public String getTask() {
 		return task;
 	}
@@ -110,18 +109,24 @@ abstract public class Employee {
         return salaryLevel;
     }
 
-    public void setSalaryLevel(int salaryLevel) {
-        this.salaryLevel = salaryLevel;
-    }
+    //Method to set the salary for the employees. Each type will hold its own body method with it is respect range of salary level
+    //This method will be inherited by AdminStaff and MedicalStaff and each class will pass the method to each child class too.
+    public abstract void setSalaryLevel();
+    
+    //    public void setSalaryLevel(int salaryLevel) {
+//        this.salaryLevel = salaryLevel;
+//    }
 
     public double getCurrentSalary() {
         return currentSalary;
     }
-
-    public void setCurrentSalary(double currentSalary) {
-        this.currentSalary = currentSalary;
-    }
-
+    
+    public abstract void setCurrentSalary();
+    
+//    public void setCurrentSalary(double currentSalary) {
+//        this.currentSalary = currentSalary;
+//    }
+    
     public String getTitle() {
         return title;
     }

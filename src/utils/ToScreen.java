@@ -67,7 +67,7 @@ public class ToScreen {
         SingletonLoadStaff staffs = SingletonLoadStaff.getInstance();
         showMessage("### Employees ###");
         for (int i = 0; i < staffs.getAllEmployee().size(); i++) {
-            showMessage("ID: " + staffs.getAllEmployee().get(i).getEmp_id()+" - Type: "+staffs.getAllEmployee().get(i).getClass().getSimpleName()+" - Name: "+staffs.getAllEmployee().get(i).getName() +" " + staffs.getAllEmployee().get(i).getSurname() +" - Salary: " + staffs.getAllEmployee().get(i).getSalaryLevel());
+            showMessage("ID: " + staffs.getAllEmployee().get(i).getEmp_id()+" - Type: "+staffs.getAllEmployee().get(i).getClass().getSimpleName()+" - Name: "+staffs.getAllEmployee().get(i).getName() +" " + staffs.getAllEmployee().get(i).getSurname() +" - Salary: " + staffs.getAllEmployee().get(i).getCurrentSalary() + " - Salary Level: " + staffs.getAllEmployee().get(i).getSalaryLevel());
         }
         
         //Option 2 print by category
