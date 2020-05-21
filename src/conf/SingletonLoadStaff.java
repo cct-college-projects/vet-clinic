@@ -17,6 +17,7 @@ public class SingletonLoadStaff {
 	private int maxMedicEmployees = 30;
 	private int maxStaffEmployees = 10;
 	private int idEmp = 0;
+	private int salaryLevel = 0;
 	private String nameRand, surnameRand, itTaskRand, accountantTaskRand, secretaryTaskRand ;
 	private ArrayList<Employee> vetList = new ArrayList<>();
 	private ArrayList<Employee> surgeonList = new ArrayList<>();
@@ -78,12 +79,12 @@ public class SingletonLoadStaff {
 			nameRand = givennameList.get(idNameRand);
 			surnameRand = surnameList.get(idSurnameRand);
 			switch (randomMedicType){
-				case 0 : vetList.add(new Veterinary(this.incrementIdEmp(), nameRand, surnameRand));
+				case 0 : vetList.add(new Veterinary(this.incrementIdEmp(), nameRand, surnameRand, salaryLevel));
 					break;
-				case 1 : surgeonList.add(new Surgeon(this.incrementIdEmp(), nameRand, surnameRand));
+				case 1 : surgeonList.add(new Surgeon(this.incrementIdEmp(), nameRand, surnameRand, salaryLevel));
 					break;
 
-				default : nurseList.add(new Nurse(this.incrementIdEmp(), nameRand, surnameRand));
+				default : nurseList.add(new Nurse(this.incrementIdEmp(), nameRand, surnameRand, salaryLevel));
 			}
 		}
 	}
@@ -117,12 +118,12 @@ public class SingletonLoadStaff {
 				
 				
 				switch (randomStaffType){
-					case 0 : accountantList.add(new Accountant(this.incrementIdEmp(), nameRand, surnameRand, accountantTaskRand ));
+					case 0 : accountantList.add(new Accountant(this.incrementIdEmp(), nameRand, surnameRand, salaryLevel, accountantTaskRand ));
 						break;
-					case 1 : itSupportList.add(new Itsupport(this.incrementIdEmp(), nameRand, surnameRand, itTaskRand));
+					case 1 : itSupportList.add(new Itsupport(this.incrementIdEmp(), nameRand, surnameRand, salaryLevel,  itTaskRand));
 						break;
 
-					default : secretaryList.add(new Secretary(this.incrementIdEmp(), nameRand, surnameRand, secretaryTaskRand));
+					default : secretaryList.add(new Secretary(this.incrementIdEmp(), nameRand, surnameRand, salaryLevel,  secretaryTaskRand));
 				}
 			}
 		} while (accountantList.size() < 2 || itSupportList.size() < 2 || secretaryList.size() < 2);

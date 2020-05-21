@@ -22,37 +22,36 @@ public class VetClinic {
 
     public VetClinic(){
     	
+    	ToScreen menu = new ToScreen();
+    	System.out.println(menu.getUserOption()); 
     	    	
-        this.staffs = SingletonLoadStaff.getInstance();
-        this.vetList     = this.staffs.getVetList();
-        this.surgeonList = this.staffs.getSurgeonList();
-        this.nurseList   = this.staffs.getNurseList();
-        
-        this.animals = SingletonLoadAnimals.getInstance();
-
-        //ToScreen.showStaffAll();
-        //ToScreen.showAnimalAll();
-
-        //List animals by various types (e.g. list all dogs) true for table false to data on line
-        //ToScreen.listAnimal(this.animals.getDogList(), true);
-        //or all animals
-        ToScreen.listAnimal(this.animals.getAllAnimals(), true);
-
-
-        // Search for a desired name in a list of one type of animal
-        //searchAnimal(this.animals.getDogList(), "Jax");
-
-        //Search for a specific name on the Animal list. It will bring all type of animals with the desired name.
-        //searchAnimal(this.animals.getAllAnimals(), "toto");
-    }
-//    Method to show all the animals with their attributes in a list
-    public void searchAnimal(ArrayList<Animals> arrayList, String name){
-        ArrayList<Animals> searchResult = AnimalSearch.binary(arrayList, name);
-        System.out.println("-------------------------------------------------------");
-        System.out.println("Result: ");
-        for (int i = 0; i < searchResult.size(); i++) {
-            System.out.println("ID: "+searchResult.get(i).getAnimal_id()+" - Animal: "+searchResult.get(i).getClass().getSimpleName()+" - "+searchResult.get(i).getFullInformation());
-        }
+//        this.staffs = SingletonLoadStaff.getInstance();
+//        this.vetList     = this.staffs.getVetList();
+//        this.surgeonList = this.staffs.getSurgeonList();
+//        this.nurseList   = this.staffs.getNurseList();
+//
+//        ToScreen.showStaffAll();
+//        
+//        this.animals = SingletonLoadAnimals.getInstance();
+//;
+//
+//       ToScreen.showAnimalAll();
+//
+//        // Search for a desired name in a list of one type of animal
+//      searchAnimal(this.animals.getDogList(), "Jax");
+//
+//        
+//        //Search for a specific name on the Animal list. It will bring all type of animals with the desired name.
+//        //searchAnimal(this.animals.getAllAnimals(), "toto");
+//    }
+////    Method to show all the animals with their attributes in a list
+//    public void searchAnimal(ArrayList<Animals> arrayList, String name){
+//        ArrayList<Animals> searchResult = AnimalSearch.binary(arrayList, name);
+//        System.out.println("-------------------------------------------------------");
+//        System.out.println("Result: ");
+//        for (int i = 0; i < searchResult.size(); i++) {
+//            System.out.println("ID: "+searchResult.get(i).getAnimal_id()+" - Animal: "+searchResult.get(i).getClass().getSimpleName()+" - "+searchResult.get(i).getFullInformation());
+//        }
     }
     
 
