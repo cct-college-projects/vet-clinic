@@ -4,20 +4,17 @@ import classes.MedicalStaff;
 
 final public class Nurse extends MedicalStaff {
 
-    public Nurse(int id, String name, String surname, double currentSalary, int salaryLevel) {
-        super(id, name, surname, currentSalary, salaryLevel);
-        this.setCurrentSalary();
+    public Nurse(int id, String name, String surname, int salaryLevel) {
+        super(id, name, surname, salaryLevel);
+        this.salaryLevel();
     }
 
 	@Override
-	public void setCurrentSalary() {
+	public void salaryLevel() {
 		// defining the random range for salary between 2100 up to 3500
-		int currentSalary = 2100 + (int)(Math.random()*(3500));
-		this.currentSalary = currentSalary;
-	}
-	@Override
-	public void setSalaryLevel() {
+		int salaryLevel = 2100 + (int)(Math.random()*(3500));
+		this.salaryLevel = salaryLevel;
 		
-		this.salaryLevel = 3;
+		
 	}
 }
