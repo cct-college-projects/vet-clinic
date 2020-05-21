@@ -5,10 +5,10 @@ abstract public class MedicalStaff extends Employee {
 
     private String medicRegister;
     
-    public MedicalStaff(int id, String name, String surname, int salaryLevel) {
-    	super(id, name, surname, salaryLevel);
-    	this.setSalaryLevel(salaryLevel);
-    }
+    public MedicalStaff(int id, String name, String surname, double currentSalary, int salaryLevel) {
+    		   	super(id, name, surname, currentSalary, salaryLevel);
+    		 	
+   }
 
    
     @Override
@@ -47,5 +47,7 @@ abstract public class MedicalStaff extends Employee {
     //Each child class will have its own salaryLevel body, as the salary level is different according to the category
     // salary level range is defined in each child class
     
-	public abstract void salaryLevel();
+    public abstract void setSalaryLevel();
+    	
+    public abstract void setCurrentSalary();
 }

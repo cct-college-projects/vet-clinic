@@ -9,9 +9,10 @@ import java.util.Comparator;
 
 public class BinarySearch {
 
-    public static ArrayList<Animals> animals(ArrayList<Animals> arraylist, String target){
+    @SuppressWarnings("unchecked")
+	public static ArrayList<Animals> animals(ArrayList<Animals> arraylist, String target){
 
-
+    	
         Collections.sort (arraylist, new Comparator() {
             public int compare(Object o1, Object o2) {
                 Animals c1 = (Animals) o1;
