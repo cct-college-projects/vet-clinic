@@ -2,13 +2,13 @@ package classes;
 
 public interface ArrayQueue {
 
-    public boolean enqueue(String element);
+    public boolean enqueue(Animals element);
 
-    public String dequeue();
+    public Animals dequeue();
 
-    public String first();
+    public Animals first();
 
-    public String last();
+    public Animals last();
 
     public int size();
 
