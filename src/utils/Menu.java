@@ -37,7 +37,7 @@ public class Menu {
 				break;
 			case 7 : //searchAnimalByName(animals);
 				break;
-			case 8 : System.exit(1);
+			case 8 : System.exit(0);
 				break;
 			default:
 				main();
