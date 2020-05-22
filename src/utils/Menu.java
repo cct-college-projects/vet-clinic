@@ -37,8 +37,10 @@ public class Menu {
 				break;
 			case 7 : //searchAnimalByName(animals);
 				break;
+			case 8 : System.exit(1);
+				break;
 			default:
-				showMessage("whatrever");
+				main();
 		}
 	}
 
@@ -117,7 +119,7 @@ public class Menu {
 			try {
 				input = Integer.parseInt(myReader.readLine());
 
-				if ((input < 1) || (input>7)) {
+				if ((input < 1) || (input>8)) {
 					System.out.println("Please type in a number between 1-7 according to your choice");
 				}
 
@@ -128,7 +130,7 @@ public class Menu {
 
 
 		}
-		while ((input < 1) || (input>7));
+		while ((input < 1) || (input>8));
 
 		return input;
 
