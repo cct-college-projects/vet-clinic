@@ -12,10 +12,8 @@ final public class Accountant extends AdminStaff {
 	@Override
 	public void setCurrentSalary() {
 	 	// defining the random range for salary between 3100 up to 4500
-		int salaryLevel = 3100 + (int)(Math.random()*(4500));
-				this.salaryLevel = salaryLevel;
-				int currentSalary = 3100 + (int)(Math.random()*(4500));
-				this.currentSalary = currentSalary;
+			double currentSalary = 3100 + (double)(Math.random()*(4500));
+			this.currentSalary = currentSalary;
 	}
 	@Override
 	public void setSalaryLevel() {

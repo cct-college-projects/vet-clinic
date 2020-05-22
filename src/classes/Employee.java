@@ -2,6 +2,8 @@ package classes;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.text.DecimalFormat;
+
 
 abstract public class Employee {
     protected int emp_id;
@@ -114,7 +116,11 @@ abstract public class Employee {
     public abstract void setSalaryLevel();
 
     public double getCurrentSalary() {
-        return currentSalary;
+    	DecimalFormat fmt = new DecimalFormat("#.##");
+    	
+    	return Double.parseDouble(fmt.format(currentSalary));
+        
+         
     }
 
     public abstract void setCurrentSalary();

@@ -12,7 +12,7 @@ final public class Itsupport extends AdminStaff {
 
 	public void setCurrentSalary() {
  		// defining the random range for salary between 1800 up to 2900
-		int currentSalary = 1800 + (int)(Math.random()*(2900));
+		double currentSalary = 1800 + (double)(Math.random()*(2900));
 		this.currentSalary = currentSalary;
 	}
 	

@@ -12,7 +12,7 @@ final public class Veterinary extends MedicalStaff {
 	@Override
 	public void setCurrentSalary() {
 	// defining the random range for salary between 2500 up to 4500
-		int currentSalary = 2500 + (int)(Math.random()*(4500));
+		double currentSalary = 2500 + (double)(Math.random()*(4500));
 			this.currentSalary = currentSalary;
 	}
 	

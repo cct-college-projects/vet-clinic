@@ -13,7 +13,7 @@ final public class Nurse extends MedicalStaff {
 		
 	public void setCurrentSalary() {
 	// defining the random range for salary between 2100 up to 3500
-		int currentSalary = 2100 + (int)(Math.random()*(3500));
+		double currentSalary = 2100 + (double)(Math.random()*(3500));
 			this.currentSalary = currentSalary;
 	}
 	@Override

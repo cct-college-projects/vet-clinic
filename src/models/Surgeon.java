@@ -12,7 +12,7 @@ final public class Surgeon extends MedicalStaff {
 	@Override
 	public void setCurrentSalary() {
 	// defining the random range for salary between 6000 up to 10000
-		int currentSalary = 6000 + (int)(Math.random()*(10000));
+		double currentSalary = 6000 + (double)(Math.random()*(10000));
 			this.currentSalary = currentSalary;
 	}
 			
