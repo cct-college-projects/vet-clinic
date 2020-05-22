@@ -8,6 +8,7 @@ abstract public class AdminStaff extends Employee {
 		super(id, name, surname, currentSalary, salaryLevel, task);
 		this.setCurrentSalary();
 		this.setSalaryLevel();
+		this.getTask();
 		
  	}
 		
@@ -21,8 +22,7 @@ abstract public class AdminStaff extends Employee {
 	}
 	@Override
 	public String getFullName() {
-		
-		 
+				 
 		if(this.name != null && this.surname != null){
             return this.name +' '+ this.surname;
         } else if(this.name != null){
@@ -32,6 +32,15 @@ abstract public class AdminStaff extends Employee {
         } else {
             return "This employee doesn't have a name.";
         }
+		
+	}
+	//Method it will create randomly task for adminStaff 
+	public String getTask() {
+		
+		if(this.task != null) {
+			return this.task;
+		}
+		return "Employees are not engaged in any task";
 		
 	}
 

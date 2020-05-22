@@ -65,7 +65,7 @@ public class ToScreen {
                 fullName = HelperStrings.addTabToString(emp.getFullName());
                 category = HelperStrings.addTabToString(emp.getClass().getSimpleName());
 //                SingletonLoadStaff staffs = SingletonLoadStaff.getInstance();
-                showMessage(emp.getEmp_id() + "\t\t" + category + "\t\t" + fullName + "\t"+ salary + "\t\t" + salaryLevel);
+                showMessage(emp.getEmp_id() + "\t\t" + category + "\t\t" + fullName + "\t\t"+ salary + "\t\t" + salaryLevel);
             }
         } else {
             for ( Employee emp: employee) {
@@ -73,5 +73,57 @@ public class ToScreen {
             }
         }
     }
+    
+    public static void listAdminStaffTask(ArrayList<Employee> admin, Boolean table) {
+    	
+    	showMessage(nChar('-', 50));
+    	showMessage("Result: "+ admin.size()+" records.");
+    	 if(table){
+    		 int[] colsHeader = {7,26,60,50};
+    		 showMessage(nCharIntervals('-', ' ', colsHeader));
+    		 showMessage("ID\t\tCATEGORY\t\tFULL NAME\t\t\t\tTASK\t\t");
+    		 showMessage(nCharIntervals('-', ' ', colsHeader));
+    		 for (Employee emp: admin) {
+    			 		 
+    			 String fullName = "", category = "", task = "";
+    			 fullName = HelperStrings.addTabToString(emp.getFullName());
+    			 category = HelperStrings.addTabToString(emp.getClass().getSimpleName());
+    			 task = HelperStrings.addTabToString(emp.getTask());
+    			 showMessage(emp.getEmp_id() + "\t\t" + category + "\t\t" + fullName + "\t\t" + task);
+    		 }
+    	 }else {
+    		 for(Employee emp: admin) {
+    			 showMessage(emp.toString());
+    		 }
+    		 
+    	 }
+    }
 
+	    
+//public static void listStaffByCategory(ArrayList<Employee> employee, Boolean table) {
+//    	
+//    	showMessage(nChar('-', 50));
+//    	showMessage("Result: "+ employee.size()+" records.");
+//    	 if(table){
+//    		 int[] colsHeader = {7,26,60,50};
+//    		 showMessage(nCharIntervals('-', ' ', colsHeader));
+//    		 showMessage("ID\t\tCATEGORY\t\tFULL NAME\t\t\t\tTASK\t\t");
+//    		 showMessage(nCharIntervals('-', ' ', colsHeader));
+//    		 for (Employee emp: employee) {
+//    			 		 
+//    			 String fullName = "", category = "", task = "";
+//    			 double salary = emp.getCurrentSalary();
+//                 int salaryLevel = emp.getSalaryLevel();
+//    			 fullName = HelperStrings.addTabToString(emp.getFullName());
+//    			 category = HelperStrings.addTabToString(emp.getClass().getSimpleName());
+//    			 task = HelperStrings.addTabToString(emp.getTask());
+//    			 showMessage(emp.getEmp_id() + "\t\t" + category + "\t\t" + fullName + "\t\t"+ salary + "\t\t" + salaryLevel);
+//    		 }
+//    	 }else {
+//    		 for(Employee emp: employee) {
+//    			 showMessage(emp.toString());
+//    		 }
+//    		 
+//    	 }
+//    }
 }
