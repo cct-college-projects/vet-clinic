@@ -20,7 +20,7 @@ abstract public class Employee {
     protected String dateOfHire;
     protected String task;
         
-
+    //Constructor to be called from MedicalStaff class. AdminStaff will use another constructor as it needs to have a different varible 
     public Employee(int id, String name, String surname, double currentSalary, int salaryLevel){
     	 
 
@@ -30,7 +30,7 @@ abstract public class Employee {
         this.setCurrentSalary();
         this.setSalaryLevel();
     }
-
+    // Constructor to be called from AdminStaff class as the adminStaff class will have a different attribute than MedicalStaff class.
     public Employee(int id, String name, String surname,double currentSalary, int salaryLevel, String task){
     	 
         this.setEmp_id(id);
@@ -40,7 +40,7 @@ abstract public class Employee {
         this.setSalaryLevel();
         this.setTask(task);
     }
-
+    
     public abstract double anualBonus();
         
 	public String getTask() {
@@ -114,8 +114,11 @@ abstract public class Employee {
     //Method to set the salary for the employees. Each type will hold its own body method with it is respect range of salary level
     //This method will be inherited by AdminStaff and MedicalStaff and each class will pass the method to each child class too.
     public abstract void setSalaryLevel();
-
+    
+    
+    //Method to generate a randomly salary for all employees. Each child class will have its own method to generate the salary according to the category
     public double getCurrentSalary() {
+    	// to convert a double salary in two decimal value
     	DecimalFormat fmt = new DecimalFormat("#.##");
     	
     	return Double.parseDouble(fmt.format(currentSalary));
@@ -155,7 +158,7 @@ abstract public class Employee {
         this.surname = surname;
     }
     
-    
+  //method to get name and surname from each employee and print a full name when requested
     public abstract String getFullName();
     
 //    public String getFullName(){

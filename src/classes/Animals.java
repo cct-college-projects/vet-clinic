@@ -41,7 +41,7 @@ abstract public class Animals {
 	public void setMedicalCondition(String medicalCondition) {
 		this.medicalCondition = medicalCondition;
 	}
-	// Method to print all the information of the animals in the final list
+	// Method will get all the attributes of each animal to print out on the final list
 	public String getFullInformation(){
         if(this.name != null && this.age != 0 && this.medicalCondition != null){
             return "type: " + this.getClass().getSimpleName() +" - name: " + this.name + " - age: " + age + " - Medical Condition: " + medicalCondition;

@@ -20,7 +20,7 @@ public class Menu {
 	private static SingletonLoadStaff employee  = SingletonLoadStaff.getInstance();
 	private static SingletonLoadStaff adminStaff = SingletonLoadStaff.getInstance();
 	
-
+	//Main menu that will be called by the ToScreen Class
 	public static void main(){
 		int option = getUserOption();
 		/** switch case option start below */
@@ -45,7 +45,8 @@ public class Menu {
 				main();
 		}
 	}
-
+	//Main menu options that will appear to the user.
+	
 	public static void listMainMenuOptions(){
 		System.out.println("\nWelcome to Vet Clinic Program. Please choose an option from the list below.\n");
 		System.out.println("1: List all staff.");
@@ -58,16 +59,7 @@ public class Menu {
 		System.out.println("8: Exit");
 	}
 
-//	public void searchAnimal(String name){
-//		ArrayList<Animals> searchResult = AnimalSearch.byName(name);
-//		listAnimal(searchResult, true);
-//	}
-//
-//	public void searchAnimalByType(String type, String name){
-//		ArrayList<Animals> searchResult = AnimalSearch.byName(type, name);
-//		listAnimal(searchResult, true);
-//	}
-	
+	//Option 2 of the main Menu. Method to print a list of Staff by category.
 	private static void listStaffByCategory(){
 		
 		showMessage("Choose one category to list:\n");
@@ -109,7 +101,7 @@ public class Menu {
         }
 
 	}
-	
+	//Option 4 of the Main menu. Method to List a specific searched name of the Staff list.
 	private static void searchStaffByName(){
 		showMessage("type the name you are looking for: \n");
 		String name = getUserTextTyped();
@@ -121,15 +113,15 @@ public class Menu {
 			main();
 		}
 	}
-	
+	//Option 6 of the Main menu. Method to List animal by type
 	private static void ListAnimalByType() {
 		
-		showMessage("Choose a type to list:\n");
+		showMessage("Choose one type to list:\n");
         showMessage("1 - Dog");
         showMessage("2 - Cat");
         showMessage("3 - Bird");
-        showMessage("4 -  Hamster");
-        showMessage("5 -  Rabbit");
+        showMessage("4 - Hamster");
+        showMessage("5 - Rabbit");
         showMessage("6 - Back to previous menu.");
         
         int option = getUserAnimalByType();

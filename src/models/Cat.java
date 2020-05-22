@@ -1,6 +1,6 @@
 package models;
 
-import java.util.Random;
+
 
 import classes.Animals;
 
@@ -10,7 +10,7 @@ final public class Cat extends Animals {
 		this.setAge();
 	}
 
-	public Random rd = new Random();
+	
 	
 	@Override
 	//Method to set age for cat randomly

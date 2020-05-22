@@ -10,6 +10,7 @@ final public class Surgeon extends MedicalStaff {
 	}
 
 	@Override
+	//Method to set a randomly salary for the employees that belongs to this class
 	public void setCurrentSalary() {
 		// defining the random range for salary between 6000 up to 10000
 		double currentSalary = 6000 + (double)(Math.random()*(10000));
@@ -17,6 +18,7 @@ final public class Surgeon extends MedicalStaff {
 	}
 
 	@Override
+	//Setting the level salary to the category
 	public void setSalaryLevel() {
 		this.salaryLevel = 6;
 	}

@@ -22,6 +22,7 @@ abstract public class MedicalStaff extends Employee {
     }
 
     @Override
+    //method to get name and surname from each employee and print a full name when requested
 	public String getFullName() {
 				 
 		if(this.name != null && this.surname != null){
@@ -46,8 +47,9 @@ abstract public class MedicalStaff extends Employee {
 
     //Each child class will have its own salaryLevel body, as the salary level is different according to the category
     // salary level range is defined in each child class
-    
     public abstract void setSalaryLevel();
     	
+    //The abstract method was created to allow each child class hold a different method body
+  	// Each child class will have its own body method to calculate the salary randomly
     public abstract void setCurrentSalary();
 }

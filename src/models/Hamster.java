@@ -10,7 +10,7 @@ final public class Hamster extends Animals {
 		this.setAge();
 	}
 		
-	public Random rd = new Random();
+	
 	
 	//Method to set age for bird randomly 
 	@Override

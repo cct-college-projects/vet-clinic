@@ -12,7 +12,7 @@ import static helpers.HelperStrings.nChar;
 import static helpers.HelperStrings.nCharIntervals;
 
 public class ToScreen {
-
+	//Method called by the Main class Vet CLinic. It will call the main menu on the Menu Class.
     public static void showMainMenu(){
         Menu.main();
     }

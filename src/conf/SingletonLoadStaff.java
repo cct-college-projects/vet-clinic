@@ -159,7 +159,8 @@ public class SingletonLoadStaff {
 	public ArrayList<Employee> getAccountantList() {
 		return accountantList;
 	}
-
+	//Method to get all the lists where each employee is stored by category and it will be used for search by name and categories
+	
 	public ArrayList<Employee> getAllEmployee(){
 		ArrayList<Employee> allEmployee = new ArrayList<>();
 		allEmployee.addAll(this.getNurseList());
@@ -171,7 +172,8 @@ public class SingletonLoadStaff {
 
 		return allEmployee;
 	}
-	
+	//Method to get and store all adminStaff lists and it will be called by the Menu class to print all adminStaff performing a certain Task
+	// Option number 3 on the main Menu
 	public ArrayList<Employee> getAllAdminStaff(){
 		
 		ArrayList<Employee> allAdminStaff = new ArrayList<>();
