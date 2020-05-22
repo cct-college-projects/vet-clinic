@@ -8,18 +8,18 @@ final public class Veterinary extends MedicalStaff {
 		super(id, name, surname, currentSalary, salaryLevel);
 		this.setCurrentSalary();
 	}
-		 
+
 	@Override
 	public void setCurrentSalary() {
-	// defining the random range for salary between 2500 up to 4500
+		// defining the random range for salary between 2500 up to 4500
 		double currentSalary = 2500 + (double)(Math.random()*(4500));
-			this.currentSalary = currentSalary;
+		this.currentSalary = currentSalary;
 	}
-	
+
 	@Override
 	public void setSalaryLevel() {
-		 		
+
 		this.salaryLevel = 5;
 	}
-	
+
 }

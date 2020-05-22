@@ -31,14 +31,14 @@ public class Menu {
 				break;
 			case 4 : searchStaffByName();
 				break;
-			case 5 : listAnimal(animals.getAllAnimals(), true);
+			case 5 : listAnimal(animals.getAllAnimals(), true); main();
 				break;
 			case 6 : //listAnimalsByType();
 				break;
 			case 7 : //searchAnimalByName(animals);
 				break;
 			default:
-				showMessage("whatever");
+				showMessage("whatrever");
 		}
 	}
 
@@ -68,7 +68,7 @@ public class Menu {
 	}
 
 	private static void searchStaffByName(){
-		showMessage("type in the name you are looking for: \n");
+		showMessage("type the name you are looking for: \n");
 		String name = getUserTextTyped();
 		ToScreen.listEmployee(EmployeeSearch.employee(employee.getAllEmployee(),name), true);
 		int tryAgain = askForGoMainMenu("Would you like to search for another name or go back to main menu?\n Type 1 to search someone else \n Type 0 to go to menu. \n Choice: ");
@@ -144,7 +144,7 @@ public class Menu {
 				text = myReader.readLine();
 
 				if ((text.length() < 3)) {
-					showMessage("Please type in a minimum of 3 characters: \n");
+					showMessage("Please type a minimum of 3 characters: \n");
 				} else {
 					return text;
 				}
