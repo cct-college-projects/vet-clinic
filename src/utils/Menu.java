@@ -15,29 +15,29 @@ import static utils.ToScreen.listAnimal;
 import static utils.ToScreen.showMessage;
 
 public class Menu {
-
+	//Reference of the singleton classes
 	private static SingletonLoadAnimals animals = SingletonLoadAnimals.getInstance();
 	private static SingletonLoadStaff employee  = SingletonLoadStaff.getInstance();
-	private static SingletonLoadStaff adminStaff = SingletonLoadStaff.getInstance();
+	
 	
 	//Main menu that will be called by the ToScreen Class
 	public static void main(){
 		int option = getUserOption();
 		/** switch case option start below */
 		switch (option){
-			case 1 : ToScreen.listEmployee(employee.getAllEmployee(), true); main();//ok
+			case 1 : ToScreen.listEmployee(employee.getAllEmployee(), true); main();
 				break;
 			case 2 : listStaffByCategory();
 				break;
-			case 3 : ToScreen.listAdminStaffTask(adminStaff.getAllAdminStaff(), true);main();//ok
+			case 3 : ToScreen.listAdminStaffTask(employee.getAllAdminStaff(), true);main();
 				break;
-			case 4 : searchStaffByName();//ok
+			case 4 : searchStaffByName();
 				break;
-			case 5 : ToScreen.listAnimal(animals.getAllAnimals(), true); main();//ok
+			case 5 : ToScreen.listAnimal(animals.getAllAnimals(), true); main();
 				break;
 			case 6 : ListAnimalByType();
 				break;
-			case 7 : searchAnimalByName();//ok
+			case 7 : searchAnimalByName();
 				break;
 			case 8 : MenuReception.main();
 				break;
@@ -75,10 +75,9 @@ public class Menu {
         showMessage("7 - Back to previous menu.");
                 
         int option = getUserStaffByCategory();
-        
+        /** switch case option start below */
         switch (option){
-
-            case 1 : ToScreen.listEmployee(employee.getSurgeonList(), true); listStaffByCategory();
+        	case 1 : ToScreen.listEmployee(employee.getSurgeonList(), true); listStaffByCategory();
                 break;
             case 2 : ToScreen.listEmployee(employee.getNurseList(), true); listStaffByCategory();
                 break;
@@ -95,20 +94,20 @@ public class Menu {
            
             default: listStaffByCategory();
             
-            int tryAgain = askForGoMainMenu("Would you like to search for another category or go back to main menu?\n Type 1 to search someone else \n Type 0 to go to menu. \n Choice: ");
-    		if(tryAgain == 1){
-    			listStaffByCategory();
-    		} else {
-    			main();
-    		  }
         }
 
 	}
+
 	//Option 4 of the Main menu. Method to List a specific searched name of the Staff list.
+	//The user will type in the name he would like to search for and if it's matches a list with all staff with the name typed will appear
+	//otherwise no records will be showed
 	private static void searchStaffByName(){
 		showMessage("type the name you are looking for: \n");
 		String name = getUserTextTyped();
 		ToScreen.listEmployee(EmployeeSearch.employee(employee.getAllEmployee(),name), true);
+		
+		//condition to do another search by name or go back to the main menu
+        //if the user decide for doing another search the method is called again, otherwise it will go back to the main menu
 		int tryAgain = askForGoMainMenu("Would you like to search for another name or go back to main menu?\n Type 1 to search someone else \n Type 0 to go to menu. \n Choice: ");
 		if(tryAgain == 1){
 			searchStaffByName();
@@ -128,7 +127,7 @@ public class Menu {
         showMessage("6 - Back to previous menu.");
         
         int option = getUserAnimalByType();
-		
+        /** switch case option start below */
 		switch (option){
 
         case 1 : ToScreen.listAnimal(animals.getDogList(), true); ListAnimalByType();
@@ -145,32 +144,32 @@ public class Menu {
         	break;
              
         default: ListAnimalByType();
-        
-        int tryAgain = askForGoMainMenu("Would you like to search for another category or go back to main menu?\n Type 1 to search someone else \n Type 0 to go to menu. \n Choice: ");
-		if(tryAgain == 1){
-			ListAnimalByType();
-		} else {
-			main();
-		  }
+
 		}
 		
 	}
-
+	//Option 7 of the Main menu. Method to print a specific name of the animal list.
+	//The user will type in the name he would like to search for and if it's matches a list with all animals with the name typed will appear
+	//otherwise no records will be showed 
 	private static void searchAnimalByName() {
 		showMessage("type in the animal's name: \n");
 		
 		String name = getUserTextTyped();
 		ToScreen.listAnimal(AnimalSearch.byName(name), true);
+		
+		//condition to do another search by name or go back to the main menu
+		//if the user decide for doing another search the method is called again, otherwise it will go back to the main menu
 		int tryAgain = askForGoMainMenu("Would you like to search for another name or go back to main menu?\n Type 1 to search someone else \n Type 0 to go to menu. \n Choice: ");
 		if(tryAgain == 1){
-			searchStaffByName();
+			searchAnimalByName();
 		} else {
 			main();
 		}
 		
 	}
 	
-
+	//Method to get the input from the user on the methods searchAnimalByName and searchStaffByName.
+	//It will give the option to do a new search by name or go back to the main menu.
 	private static int askForGoMainMenu(String message){
 		showMessage(message);
 		BufferedReader myReader = new BufferedReader(new InputStreamReader(System.in));
@@ -271,7 +270,7 @@ public class Menu {
 		return input;
 		
 	}
-
+	//Method to get the name typed by the user on the methods to search a specific staff or animal by name.
 	private static String getUserTextTyped () {
 
 		BufferedReader myReader = new BufferedReader(new InputStreamReader(System.in));

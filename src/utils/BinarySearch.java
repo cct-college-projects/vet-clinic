@@ -10,7 +10,7 @@ import java.util.Comparator;
 
 public class BinarySearch {
 
-    @SuppressWarnings("unchecked")
+    
 	public static ArrayList<Animals> animals(ArrayList<Animals> arraylist, String target){
 
     	

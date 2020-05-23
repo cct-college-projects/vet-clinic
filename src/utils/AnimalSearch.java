@@ -6,6 +6,7 @@ import conf.SingletonLoadAnimals;
 import java.util.ArrayList;
 
 
+
 public class AnimalSearch {
 
 		private static SingletonLoadAnimals animals = SingletonLoadAnimals.getInstance();
@@ -15,7 +16,7 @@ public class AnimalSearch {
 			return BinarySearch.animals(animals.getAllAnimals(), target);
 	}
 
-
+	//Method to search an animal by name
 	public static ArrayList<Animals> byName(String type, String target){
 			
 			switch (type.trim().toLowerCase()){
@@ -24,6 +25,7 @@ public class AnimalSearch {
             case "cat"     : return BinarySearch.animals(animals.getCatList(), target);
             case "hamster" : return BinarySearch.animals(animals.getHamsterList(), target);
             case "rabbit"  : return BinarySearch.animals(animals.getRabbitList(), target);
+            case "all" 	   : return BinarySearch.animals(animals.getAllAnimals(), target);
             default        : System.out.println("Type not exist. The options are: dog, bird, cat, hamster and rabbit.");
                 break;
 			}

@@ -16,12 +16,13 @@ public class ToScreen {
     public static void showMainMenu(){
         Menu.main();
     }
-
+    //Method to create a shortcut for System.out.println()
     public static void showMessage(String msg){
         System.out.println(msg);
     }
 
     //List animals by various types (e.g. list all dogs) -> ToScreen.listAnimal(this.animals.getDogList());
+    //Method to list all animals when it is called by option number 5 on the main menu
     public static void listAnimal(ArrayList<Animals> animals, Boolean table){
 
         showMessage("Result: "+ animals.size()+" records.");
@@ -47,7 +48,7 @@ public class ToScreen {
         }
     }
 
-
+    //Method to list all employees when it is called by option number 1 on the main menu
     public static void listEmployee(ArrayList<Employee> employee, Boolean table){
 
         showMessage(nChar('-', 50));
@@ -64,7 +65,7 @@ public class ToScreen {
                 int salaryLevel = emp.getSalaryLevel();
                 fullName = HelperStrings.addTabToString(emp.getFullName());
                 category = HelperStrings.addTabToString(emp.getClass().getSimpleName());
-//                SingletonLoadStaff staffs = SingletonLoadStaff.getInstance();
+
                 showMessage(emp.getEmp_id() + "\t\t" + category + "\t\t" + fullName + "\t\t"+ salary + "\t\t" + salaryLevel);
             }
         } else {
@@ -73,7 +74,8 @@ public class ToScreen {
             }
         }
     }
-    
+    //Method to list employees from AdminStaff performing a task only.
+    //It is called by option number 4 on the main menu
     public static void listAdminStaffTask(ArrayList<Employee> admin, Boolean table) {
     	
     	showMessage(nChar('-', 50));
@@ -99,31 +101,4 @@ public class ToScreen {
     	 }
     }
 
-	    
-//public static void listStaffByCategory(ArrayList<Employee> employee, Boolean table) {
-//    	
-//    	showMessage(nChar('-', 50));
-//    	showMessage("Result: "+ employee.size()+" records.");
-//    	 if(table){
-//    		 int[] colsHeader = {7,26,60,50};
-//    		 showMessage(nCharIntervals('-', ' ', colsHeader));
-//    		 showMessage("ID\t\tCATEGORY\t\tFULL NAME\t\t\t\tTASK\t\t");
-//    		 showMessage(nCharIntervals('-', ' ', colsHeader));
-//    		 for (Employee emp: employee) {
-//    			 		 
-//    			 String fullName = "", category = "", task = "";
-//    			 double salary = emp.getCurrentSalary();
-//                 int salaryLevel = emp.getSalaryLevel();
-//    			 fullName = HelperStrings.addTabToString(emp.getFullName());
-//    			 category = HelperStrings.addTabToString(emp.getClass().getSimpleName());
-//    			 task = HelperStrings.addTabToString(emp.getTask());
-//    			 showMessage(emp.getEmp_id() + "\t\t" + category + "\t\t" + fullName + "\t\t"+ salary + "\t\t" + salaryLevel);
-//    		 }
-//    	 }else {
-//    		 for(Employee emp: employee) {
-//    			 showMessage(emp.toString());
-//    		 }
-//    		 
-//    	 }
-//    }
 }
