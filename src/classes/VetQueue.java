@@ -5,6 +5,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * This class was originally writen by Amilca https://github.com/apontejaj and adapted by Rafael Ricardo https://github.com/rafaelricardo-rj
+ * */
+
 public class VetQueue implements ArrayQueue{
 
     private Animals[] data;
