@@ -6,6 +6,7 @@ import java.text.DecimalFormat;
 
 
 abstract public class Employee {
+	//implements employees of categories Admin and Medical Staff
     protected int emp_id;
     protected String name;
     protected String surname;

@@ -1,7 +1,7 @@
 package classes;
 
 abstract public class MedicalStaff extends Employee {
-
+	//Implements employee of the category MedicalStaff  with ID, name and salary
 
     private String medicRegister;
     

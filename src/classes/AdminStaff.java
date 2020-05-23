@@ -3,7 +3,7 @@ package classes;
 
 
 abstract public class AdminStaff extends Employee {
-	
+	//Implements employee of the category AdminStaff  with ID, name, salary and occupation (task)
 	public AdminStaff (int id, String name, String surname,double currentSalary, int salaryLevel, String task) {
 		super(id, name, surname, currentSalary, salaryLevel, task);
 		this.setCurrentSalary();

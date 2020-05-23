@@ -1,6 +1,7 @@
 package classes;
 
 abstract public class Animals {
+//Implements animals with ID, name, Age and Medical Condition
 	protected int animal_id;
 	protected String name;
 	protected int age;
