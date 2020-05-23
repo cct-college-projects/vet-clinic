@@ -1,5 +1,5 @@
 package enums;
-
+//Class responsible for loading all files stored on the Files package
 public enum FilesImport {
     /*
         GIVENNAME is a mix of names for women and men but just in case some day needs a name by gender, there are two

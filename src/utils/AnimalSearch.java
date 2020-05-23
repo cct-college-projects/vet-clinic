@@ -6,11 +6,11 @@ import conf.SingletonLoadAnimals;
 import java.util.ArrayList;
 
 
-
+//Implements a search method for animals's name
 public class AnimalSearch {
-
+		
 		private static SingletonLoadAnimals animals = SingletonLoadAnimals.getInstance();
-    
+    //Method to store all animals sorted on the class BinarySearch
 	public static ArrayList<Animals> byName(String target){
 			
 			return BinarySearch.animals(animals.getAllAnimals(), target);
@@ -26,30 +26,10 @@ public class AnimalSearch {
             case "hamster" : return BinarySearch.animals(animals.getHamsterList(), target);
             case "rabbit"  : return BinarySearch.animals(animals.getRabbitList(), target);
             case "all" 	   : return BinarySearch.animals(animals.getAllAnimals(), target);
-            default        : System.out.println("Type not exist. The options are: dog, bird, cat, hamster and rabbit.");
+            default        : System.out.println("Type does not exist. The options are: dog, bird, cat, hamster and rabbit.");
                 break;
 			}
         return new ArrayList<>();
     }
-	
-	public static ArrayList<Animals> listAnimals(String type){
-        switch (type.trim().toLowerCase()){
-            case ""        : return animals.getAllAnimals();
-            case "all"     : return animals.getAllAnimals();
-            case "dog"     : return animals.getDogList();
-            case "bird"    : return animals.getBirdList();
-            case "cat"     : return animals.getCatList();
-            case "hamster" : return animals.getHamsterList();
-            case "rabbit"  : return animals.getRabbitList();
-            default        : System.out.println("Type not exist. The options are: 'dog', 'bird', 'cat', 'hamster', 'rabbit' and 'all'.");
-                break;
-        }
-        return new ArrayList<>();
-    }
 		
-
-
-
-
-
 }

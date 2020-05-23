@@ -16,7 +16,7 @@ public class HelperAnimals {
 		animalName = new ArrayList<String>();
 		String line;
 		
-		//System.out.println("Reading animal name file");
+		
 		try {
 			br = new BufferedReader(new FileReader (FilesImport.ANIMALNAME.getDirectory()));
 			while ((line = br.readLine()) !=null) {
