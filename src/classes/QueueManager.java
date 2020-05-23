@@ -117,7 +117,7 @@ public class QueueManager {
         for (int linha = 0; linha < 10; linha++) {
             int ncol = 0;
             for (Integer id : getQueuesHolder().keySet()){
-                colunas[ncol] = getQueuesHolder().get(id).asList().get(linha) == null ? new Dog(0,"xxxxx", 0, " ") : getQueuesHolder().get(id).asList().get(linha);
+                colunas[ncol] = getQueuesHolder().get(id).asList().get(linha) == null ? new Dog(0,"[   ]", 0, " ") : getQueuesHolder().get(id).asList().get(linha);
                 linhas.add(colunas);
                 ncol++;
             }
