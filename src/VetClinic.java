@@ -25,8 +25,6 @@ public class VetClinic {
         SingletonLoadStaff.getInstance();
         SingletonLoadAnimals.getInstance();
         QueueManager.getInstance();
-        //QueueManager queue = QueueManager.getInstance();
-        //queue.listAnimalsOrderInTheQueue();
         ToScreen.showMainMenu();
     }
 }
