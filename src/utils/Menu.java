@@ -39,7 +39,9 @@ public class Menu {
 				break;
 			case 7 : searchAnimalByName();//ok
 				break;
-			case 8 : System.exit(0);
+			case 8 : MenuReception.main();
+				break;
+			case 9 : System.exit(0);
 				break;
 			default:
 				main();
@@ -56,7 +58,8 @@ public class Menu {
 		System.out.println("5: List all animals.");
 		System.out.println("6: List animals by type.");
 		System.out.println("7: Search for a specific animal by name.");
-		System.out.println("8: Exit");
+		System.out.println("8: See the Queue to the Veterinary");
+		System.out.println("9: Exit");
 	}
 
 	//Option 2 of the main Menu. Method to print a list of Staff by category.
@@ -75,17 +78,17 @@ public class Menu {
         
         switch (option){
 
-            case 1 : ToScreen.listEmployee(employee.getSurgeonList(), true); 
+            case 1 : ToScreen.listEmployee(employee.getSurgeonList(), true); listStaffByCategory();
                 break;
-            case 2 : ToScreen.listEmployee(employee.getNurseList(), true);
+            case 2 : ToScreen.listEmployee(employee.getNurseList(), true); listStaffByCategory();
                 break;
-            case 3 : ToScreen.listEmployee(employee.getVetList(), true);
+            case 3 : ToScreen.listEmployee(employee.getVetList(), true); listStaffByCategory();
             	break;
-            case 4 : ToScreen.listEmployee(employee.getAccountantList(), true);
+            case 4 : ToScreen.listEmployee(employee.getAccountantList(), true); listStaffByCategory();
             	break;
-            case 5 : ToScreen.listEmployee(employee.getItSupportList(), true);
+            case 5 : ToScreen.listEmployee(employee.getItSupportList(), true); listStaffByCategory();
             	break;
-            case 6 : ToScreen.listEmployee(employee.getSecretaryList(), true);
+            case 6 : ToScreen.listEmployee(employee.getSecretaryList(), true); listStaffByCategory();
             	break;
             case 7 : main();
             break;
@@ -128,15 +131,15 @@ public class Menu {
 		
 		switch (option){
 
-        case 1 : ToScreen.listAnimal(animals.getDogList(), true);
+        case 1 : ToScreen.listAnimal(animals.getDogList(), true); ListAnimalByType();
             break;
-        case 2 : ToScreen.listAnimal(animals.getCatList(), true);
+        case 2 : ToScreen.listAnimal(animals.getCatList(), true); ListAnimalByType();
             break;
-        case 3 : ToScreen.listAnimal(animals.getBirdList(), true);
+        case 3 : ToScreen.listAnimal(animals.getBirdList(), true); ListAnimalByType();
         	break;
-        case 4 : ToScreen.listAnimal(animals.getHamsterList(), true);
+        case 4 : ToScreen.listAnimal(animals.getHamsterList(), true); ListAnimalByType();
         	break;
-        case 5 : ToScreen.listAnimal(animals.getRabbitList(), true);
+        case 5 : ToScreen.listAnimal(animals.getRabbitList(), true); ListAnimalByType();
         	break;
         case 6 : main();
         	break;
@@ -206,16 +209,16 @@ public class Menu {
 			try {
 				input = Integer.parseInt(myReader.readLine());
 
-				if ((input < 1) || (input>8)) {
-					System.out.println("Please type in a number between 1-7 according to your choice");
+				if ((input < 1) || (input>9)) {
+					System.out.println("Please type in a number between 1-9 according to your choice");
 				}
 
 			}catch (Exception e) {
-				System.out.println("Character invalid. Please enter a number from 1-7 according to your choice");
+				System.out.println("Character invalid. Please enter a number from 1-9 according to your choice");
 				input = 0;
 			}
 			
-		}while ((input < 1) || (input>8));
+		}while ((input < 1) || (input>9));
 
 		return input;
 		

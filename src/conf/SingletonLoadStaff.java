@@ -73,21 +73,23 @@ public class SingletonLoadStaff {
 	private void createMedicList(){
 		int randomMedicType;
 		//System.out.println("Creating medics list.");
-		for (int i = 0; i < this.maxMedicEmployees; i++) {
-			randomMedicType = random.nextInt(3);
-			idNameRand = random.nextInt(this.givennameListSize);
-			idSurnameRand = random.nextInt(this.surnameListSize);
-			nameRand = givennameList.get(idNameRand);
-			surnameRand = surnameList.get(idSurnameRand);
-			switch (randomMedicType){
-				case 0 : vetList.add(new Veterinary(this.incrementIdEmp(), nameRand, surnameRand, currentSalary, salaryLevel));
-					break;
-				case 1 : surgeonList.add(new Surgeon(this.incrementIdEmp(), nameRand, surnameRand, currentSalary, salaryLevel));
-					break;
+		do {
+			for (int i = 0; i < this.maxMedicEmployees; i++) {
+				randomMedicType = random.nextInt(3);
+				idNameRand = random.nextInt(this.givennameListSize);
+				idSurnameRand = random.nextInt(this.surnameListSize);
+				nameRand = givennameList.get(idNameRand);
+				surnameRand = surnameList.get(idSurnameRand);
+				switch (randomMedicType){
+					case 0 : vetList.add(new Veterinary(this.incrementIdEmp(), nameRand, surnameRand, currentSalary, salaryLevel));
+						break;
+					case 1 : surgeonList.add(new Surgeon(this.incrementIdEmp(), nameRand, surnameRand, currentSalary, salaryLevel));
+						break;
 
-				default : nurseList.add(new Nurse(this.incrementIdEmp(), nameRand, surnameRand, currentSalary, salaryLevel));
+					default : nurseList.add(new Nurse(this.incrementIdEmp(), nameRand, surnameRand, currentSalary, salaryLevel));
+				}
 			}
-		}
+		} while (vetList.size() < 6);// ensure minimum of 6 Vets
 	}
 
 	private void createStaffList(){

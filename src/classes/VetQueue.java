@@ -1,5 +1,10 @@
 package classes;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class VetQueue implements ArrayQueue{
 
     private Animals[] data;
@@ -71,12 +76,35 @@ public class VetQueue implements ArrayQueue{
         return false;
     }
 
+    public boolean has(Animals animal){
+        List<Animals> queue = Arrays.asList(data);
+        return queue.contains(animal);
+    }
+
+    public ArrayList<Animals> asArrayList(){
+
+        List<Animals> arrayTolist = Arrays.asList(data);
+
+        ArrayList<Animals> noNullelements = new ArrayList<>();
+
+        for (int i = 0; i < arrayTolist.size(); i++) {
+            if(arrayTolist.get(i) != null){
+                noNullelements.add(arrayTolist.get(i));
+            }
+        }
+        return noNullelements;
+    }
+
+    public List<Animals> asList(){
+        return Arrays.asList(data);
+    }
+
     @Override
     public String toString(){
         String result = "[ ";
 
         for(int i = front; i <= rear; i++){
-            result += data[i].getFullInformation() + " ";
+            result += data[i].getName()+" ("+data[i].getClass().getSimpleName()+"), ";
         }
 
         result += "]";
